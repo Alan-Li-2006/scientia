@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #444;
+}
+
+.dark-theme {
+  --primary-color: #444;
+  --secondary-color: #fff;
+}
+
+/* coral values: 
+color: #f88379;
+*/
+.active {
+  color: #f88379 !important;
+}
+
+.icon {
+  width: 30px;
+  cursor: pointer;
+  position: relative;
+  left: 1211px;
+  bottom: 30px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: var(--primary-color);
+}
+
+.menu ul {
+  display: inline-flex;
+  margin: 50px;
+}
+
+.menu ul li {
+  list-style: none;
+  margin: 0 20px;
+  color: #b2b1b1;
+  cursor: pointer;
+}
+
+.menu ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: #b2b1b1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.logo img {
+  width: 60px;
+  margin-top: -12px;
+  margin-right: 5px;
+}
+
+.banner {
+  width: 80%;
+  top: 35%;
+  left: 130px;
+  position: absolute;
+  color: var(--secondary-color);
+}
+
+/* coral values: 
+color: #f88379;
+*/
+span {
+  color: #f88379;
+}
+
+.app-text {
+  width: 50%;
+  float: left;
+}
+
+.app-text h1 {
+  font-size: 53px;
+  width: 640px;
+  position: relative;
+  margin-left: 40px;
+}
+
+.app-text p {
+  width: 650px;
+  font-size: 15px;
+  margin: 30px 0 30px 40px;
+  line-height: 25px;
+  color: #919191;
+}
+
+.slides {
+  width: 50%;
+  float: right;
+}
+
+.slides img {
+  width: 100%;
+  margin-top: -20px;
+  padding-left: 50px;
+}
+
+.goto-subs {
+  margin-left: 40px;
+  display: inline-flex;
+}
+
+.goto-subs-inner {
+  height: 50px;
+  width: 600px;
+}
+
+/* coral values: 
+color: #f88379;
+*/
+.subs-btn {
+  border-radius: 25px;
+  background: var(--secondary-color);
+  padding: 10px;
+  text-decoration: none;
+  color: #f88379;
+  transition: all 0.3s ease;
+}
+
+/* coral values: 
+background: #f8b59b;
+color: #f08080;
+*/
+.subs-btn:hover {
+  color: #f08080;
+  background: #f8b59b;
+}
+
+.subs-btn:active {
+  text-decoration: none;
+}
