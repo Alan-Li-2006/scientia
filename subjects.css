@@ -21,10 +21,8 @@
 }
 
 .menu ul {
-  position: relative;
   display: inline-flex;
   margin: 50px;
-  left: -40px;
 }
 
 .menu ul li {
