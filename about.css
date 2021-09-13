@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--primary-color);
+}
+
 :root {
   --primary-color: #fff;
   --secondary-color: #444;
@@ -10,11 +23,181 @@
   --secondary-color: #fff;
 }
 
-.menu ul {
+.header {
+  background-color: var(--primary-color);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:130px;
+  width: 100%;
+  z-index: -1;
+}
+
+.container {
+  margin: 10 10px;
+}
+
+.app-text {
   position: relative;
+  margin-left: 170px;
+  margin-top: 100px;
+  color: var(--secondary-color);
+}
+
+.app-text p {
+  font-size: 24px;
+  line-height: 50px
+}
+
+.app-text h1 {
+  font-size: 48px;
+  width: 640px;
+}
+
+h1 span {
+  color: #f88379;
+}
+
+p span:before {
+  content: 'for teaching';
+  animation: animate infinite steps(5) 10s;
+}
+@keyframes animate{
+  0%{
+    content: 'for revising';
+  }
+  20%{
+    content: 'for studying';
+  }
+  40%{
+    content: 'to get ahead';
+  }
+  60%{
+    content: 'for last minute prep';
+  }
+  80%{
+    content: 'that simply work';
+  }
+}
+
+.cutout {
+  background-color: grey;
+  z-index: -3;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 130px;
+  left: 0px;
+  width:100%;
+  height: 600px;
+}
+
+.cover {
+  background-color: var(--primary-color);
+  z-index: -3;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 580px;
+  left: 0px;
+  width:100%;
+  height: 1350px;
+  -webkit-transform: skew(0,-10deg);
+  -ms-transform: skew(0,-10deg);
+  transform: skew(0,-10deg);
+  border-top: solid 20px;
+  border-color: rgb(94, 94, 94);
+}
+
+.textbox {
+  background-color: rgb(30, 30, 30);
+  color: var(--secondary-color);
+  margin: 50px;
+  padding: 60px;
+  border-radius: 25px;
+  position: absolute;
+  box-shadow: 5px white;
+  top: 280px;
+  left: 42.5%;
+  width: 40%;
+  height: fit-content;
+}
+
+.textbox h2 {
+  color: #f88379;
+}
+
+.textbox p {
+  color: rgb(30, 30, 30);
+}
+
+.pickmevibe {
+  top: 950px;
+  left: 30%;
+  width: 40%;
+  padding:0;
+  border-top: 5px solid var(--secondary-color);
+  border-bottom: 5px solid var(--secondary-color);
+  position: absolute;
+  text-align: center;
+  font-family: 'Poppins';
+  font-style: bold;
+  font-size: 55px;
+  color: var(--secondary-color);
+}
+
+.superpickmevibe {
+  color: #f88379;
+}
+
+.pickmevibe span {
+  font-size: 68px;
+}
+
+.textbox2 {
+  background-color: rgb(30, 30, 30);
+  color: var(--secondary-color);
+  margin: 50px;
+  padding: 60px;
+  border-radius: 25px;
+  position: absolute;
+  box-shadow: 5px white;
+  top: 1300px;
+  left: 3%;
+  width: 40%;
+  height: fit-content;
+}
+
+.textbox2 h2 {
+  color: #f88379;
+}
+
+.textbox2 p {
+  color: rgb(30, 30, 30);
+}
+
+.endlogo {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 1450px;
+  left: 60%;
+  width: 500px;
+  height: 500px;
+}
+
+
+
+
+
+
+
+
+.menu ul {
   display: inline-flex;
   margin: 50px;
-  left: -40px;
 }
 
 .menu ul li {
@@ -58,11 +241,4 @@ a:visited {
   position: absolute;
   left: 95%;
   top: 5%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  background: var(--primary-color);
 }
