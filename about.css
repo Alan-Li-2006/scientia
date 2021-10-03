@@ -16,11 +16,21 @@ body {
 :root {
   --primary-color: #fff;
   --secondary-color: #444;
+  --logo: url(Resources/Scientia_Coral_slogan_white.png);
+  --textbox: #fff;
+  --cutout: #fff;
+  --cover: #efd9b4;
+  --stripe: #444;
 }
 
 .dark-theme {
   --primary-color: #444;
   --secondary-color: #fff;
+  --logo: url(Resources/Scientia_Coral_Slogan.png);
+  --textbox: #444;
+  --cutout: #444;
+  --cover: grey;
+  --stripe: rgb(94, 94, 94);
 }
 
 .header {
@@ -83,7 +93,7 @@ p span:before {
 }
 
 .cutout {
-  background-color: grey;
+  background-color: var(--cutout);
   z-index: -3;
   margin: 0;
   padding: 0;
@@ -95,7 +105,7 @@ p span:before {
 }
 
 .cover {
-  background-color: var(--primary-color);
+  background-color: var(--cover);
   z-index: -3;
   margin: 0;
   padding: 0;
@@ -103,16 +113,47 @@ p span:before {
   top: 580px;
   left: 0px;
   width:100%;
-  height: 1350px;
+  height: 1380px;
   -webkit-transform: skew(0,-10deg);
   -ms-transform: skew(0,-10deg);
   transform: skew(0,-10deg);
   border-top: solid 20px;
-  border-color: rgb(94, 94, 94);
+  border-color: var(--stripe);
+}
+
+.coverfiller {
+  background-color: var(--cover);
+  z-index: -3;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 1850px;
+  left: 0px;
+  width:100%;
+  height: 253px;
+}
+
+.filetag {
+  background-color: var(--primary-color);
+  z-index: -3;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 620px;
+  left: 100px;
+  width: 400px;
+  height: 45px;
+  -webkit-transform: skew(0,-10deg);
+  -ms-transform: skew(0,-10deg);
+  transform: skew(0,-10deg);
+  text-align: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 18px;
 }
 
 .textbox {
-  background-color: rgb(30, 30, 30);
+  background-color: var(--textbox);
   color: var(--secondary-color);
   margin: 50px;
   padding: 60px;
@@ -123,6 +164,7 @@ p span:before {
   left: 42.5%;
   width: 40%;
   height: fit-content;
+  box-shadow: 3px 3px 20px 2px rgb(15, 15, 15);
 }
 
 .textbox h2 {
@@ -130,7 +172,7 @@ p span:before {
 }
 
 .textbox p {
-  color: rgb(30, 30, 30);
+  color: var(--textbox);
 }
 
 .pickmevibe {
@@ -157,7 +199,7 @@ p span:before {
 }
 
 .textbox2 {
-  background-color: rgb(30, 30, 30);
+  background-color: var(--textbox);
   color: var(--secondary-color);
   margin: 50px;
   padding: 60px;
@@ -168,6 +210,7 @@ p span:before {
   left: 3%;
   width: 40%;
   height: fit-content;
+  box-shadow: 5px 5px 25px 3px rgb(15, 15, 15);
 }
 
 .textbox2 h2 {
@@ -175,18 +218,33 @@ p span:before {
 }
 
 .textbox2 p {
-  color: rgb(30, 30, 30);
+  color: var(--textbox);
 }
 
 .endlogo {
+  background-image: var(--logo);
+  background-repeat: no-repeat;
+  z-index: -2;
   margin: 0;
   padding: 0;
+  border-radius: 0;
+  border: 0;
   position: absolute;
   top: 1450px;
   left: 60%;
-  width: 500px;
-  height: 500px;
+  width: 490px;
+  height: 490px;
 }
+
+.bordercontrol {
+  border: 10px solid var(--cover);
+  position: absolute;
+  top: 1450px;
+  left: 60%;
+  width: 475px;
+  height: 475px;
+}
+
 
 
 
