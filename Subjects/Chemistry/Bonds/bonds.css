@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #444;
+  --shadow-1: #d9d9d9;
+  --shadow-2: #fff;
+}
+
+.dark-theme {
+  --primary-color: #444;
+  --secondary-color: #fff;
+  --shadow-1: #3a3a3a;
+  --shadow-2: #4e4e4e;
+}
+
+body {
+  background: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+.menu ul {
+  position: relative;
+  display: inline-flex;
+  margin: 50px;
+  left: -40px;
+}
+
+.menu ul li {
+  list-style: none;
+  margin: 0 20px;
+  color: #b2b1b1;
+  cursor: pointer;
+}
+
+.menu ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: #b2b1b1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.logo img {
+  width: 60px;
+  margin-top: -12px;
+  margin-right: 5px;
+}
+
+.active {
+  color: #f88379 !important;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  left: 95%;
+  top: 5%;
+}
+
+
+
+
+.header {
+  background-color: var(--primary-color);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:130px;
+  width: 100%;
+  z-index: -1;
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+}
+
+.title h1 {
+  color: var(--secondary-color);
+  top: 20px;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+
+.title p {
+  color: var(--secondary-color);
+  top: 30px;
+  padding: 0;
+  text-align: center;
+  position: relative;
+} 
+
+.title back {
+  background-color: grey;
+  position: absolute;
+  left: 0px;
+  top: 130px;
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+}
+
+.content textbox1 {
+  color: var(--secondary-color);
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 480px;
+  left: 15%;
+  height: fit-content;
+  width: 37%;
+  line-height: 25px;
+}
+
+.content textbox2 {
+  color: var(--secondary-color);
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 875px;
+  left: 15%;
+  height: fit-content;
+  width: 68%;
+  line-height: 25px;
+}
+
+.content textbox3a {
+  color: var(--secondary-color);
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 1150px;
+  left: 15%;
+  height: fit-content;
+  width: 68%;
+  line-height: 25px;
+}
+
+.content textbox3pissedoff {
+  color: var(--secondary-color);
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 1630px;
+  left: 15%;
+  height: fit-content;
+  width: 34%;
+  line-height: 25px;
+}
+
+.content textbox3b {
+  color: var(--secondary-color);
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 1895px;
+  left: 15%;
+  height: fit-content;
+  width: 68%;
+  line-height: 25px;
+}
+
+.content textbox3c {
+  color: var(--secondary-color);
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 2135px;
+  left: 51%;
+  height: fit-content;
+  width: 32%;
+  line-height: 26px;
+}
+
+.content textbox4a {
+  color: var(--secondary-color);
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 3000px;
+  left: 15%;
+  height: fit-content;
+  width: 34%;
+  line-height: 25px;
+}
+
+.content textbox4b {
+  color: var(--secondary-color);
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 3320px;
+  left: 50%;
+  height: fit-content;
+  width: 34%;
+  line-height: 25px;
+}
+
+.content textbox4c {
+  color: var(--secondary-color);
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 3720px;
+  left: 15%;
+  height: fit-content;
+  width: 33%;
+  line-height: 25px;
+}
+
+.content h1{
+  color: var(--secondary-color);
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 2900px;
+  left: 15%;
+  height: fit-content;
+  width: 68%;
+  line-height: 25px;
+}
+
+.content stripe{
+  background-color: var(--secondary-color);
+  margin: 20px;
+  position: absolute;
+  top: 2950px;
+  left: 15%;
+  height: 8px;
+  width: 68%;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+.image-gallery gallery1 {
+  content: url(/Resources/Bonds_1.png);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 570px;
+  left: 55%;
+  height: fit-content;
+  width: 29%;
+  border-radius: 25px;
+  box-shadow: 10px 10px 20px var(--shadow-1),
+  -10px -10px 20px var(--shadow-2);
+}
+
+.image-gallery gallery2 {
+  content: url(/Resources/Bonds_2.png);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 1675px;
+  left: 51%;
+  height: 200px;
+  width: 33%;
+  border-radius: 25px;
+  box-shadow: 10px 10px 20px var(--shadow-1),
+  -10px -10px 20px var(--shadow-2);
+}
+
+.image-gallery gallery3 {
+  content: url(/Resources/Bonds_3.png);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 2175px;
+  left: 16%;
+  height: 300px;
+  width: 34%;
+  border-radius: 25px;
+  box-shadow: 10px 10px 20px var(--shadow-1),
+  -10px -10px 20px var(--shadow-2);
+}
+
+.image-gallery gallery4 {
+  content: url(/Resources/Bonds_4.png);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 3100px;
+  left: 52%;
+  height: 230px;
+  width: 33%;
+  border-radius: 25px;
+  box-shadow: 10px 10px 20px var(--shadow-1),
+  -10px -10px 20px var(--shadow-2);
+}
+
+.image-gallery gallery5 {
+  content: url(/Resources/Bonds_5.png);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 3410px;
+  left: 16%;
+  height: 300px;
+  width: 33%;
+  border-radius: 25px;
+  box-shadow: 10px 10px 20px var(--shadow-1),
+  -10px -10px 20px var(--shadow-2);
+}
+
+.image-gallery gallery6 {
+  content: url(/Resources/Bonds_6.png);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 3750px;
+  left: 51%;
+  height: 210px;
+  width: 33%;
+  border-radius: 25px;
+  box-shadow: 10px 10px 20px var(--shadow-1),
+  -10px -10px 20px var(--shadow-2);
+}
+
+
+
+
+
+.adspace adleft {
+  background-color: purple;
+  color: white;
+  padding: 15px;
+  margin: 0;
+  position: absolute;
+  top: 130px;
+  left: 0px;
+  height: 5000px;
+  width: 150px;
+}
+
+.adspace adright {
+  background-color: purple;
+  color: white;
+  padding: 15px;
+  margin: 0;
+  position: absolute;
+  top: 130px;
+  right: 0px;
+  height: 5000px;
+  width: 150px;
+}
