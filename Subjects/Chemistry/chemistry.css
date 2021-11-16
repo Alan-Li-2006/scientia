@@ -206,6 +206,26 @@ a:visited {
   transition: all 0.5s ease;
 }
 
+.subtopic subtopic2 a {
+  color: var(--secondary-color);
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.subtopic subtopic2 a:active {
+  text-decoration: none;
+}
+
+.subtopic subtopic2 a:visited {
+  text-decoration: none;
+  color: var(--secondary-color)
+}
+
+.subtopic subtopic2 a:hover {
+  color: coral;
+}
+
 .content stripe {
   background-color: #444;
   padding: 0;
