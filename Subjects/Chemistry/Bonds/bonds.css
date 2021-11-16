@@ -223,6 +223,30 @@ a:visited {
   line-height: 25px;
 }
 
+.content textbox5a {
+  color: var(--secondary-color);
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 3800px;
+  left: 15%;
+  height: fit-content;
+  width: 33%;
+  line-height: 25px;
+}
+
+.content textbox5b {
+  color: var(--secondary-color);
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 4070px;
+  left: 15%;
+  height: fit-content;
+  width: 68%;
+  line-height: 25px;
+}
+
 .content h1{
   color: var(--secondary-color);
   padding: 20px;
@@ -328,7 +352,7 @@ a:visited {
   padding: 0;
   margin: 0;
   position: absolute;
-  top: 3750px;
+  top: 3870px;
   left: 51%;
   height: 210px;
   width: 33%;
@@ -349,7 +373,7 @@ a:visited {
   position: absolute;
   top: 130px;
   left: 0px;
-  height: 5000px;
+  height: 4100px;
   width: 150px;
 }
 
@@ -361,6 +385,6 @@ a:visited {
   position: absolute;
   top: 130px;
   right: 0px;
-  height: 5000px;
+  height: 4100px;
   width: 150px;
 }
