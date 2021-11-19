@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #444;
+  --shadow-1: #c6c6c6;
+  --shadow-2: #fff;
+  --background: #e9e9e9;
+}
+
+.dark-theme {
+  --primary-color: #444;
+  --secondary-color: #fff;
+  --shadow-1: #515151;
+  --shadow-2: #6d6d6d;
+  --background: #5F5F5F;
+}
+
+body {
+  background: var(--background);
+  font-family: 'Poppins', sans-serif;
+}
+
+.menu ul {
+  position: relative;
+  display: inline-flex;
+  margin: 50px;
+  left: -40px;
+}
+
+.menu ul li {
+  list-style: none;
+  margin: 0 20px;
+  color: #b2b1b1;
+  cursor: pointer;
+}
+
+.menu ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: #b2b1b1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.logo img {
+  width: 60px;
+  margin-top: -12px;
+  margin-right: 5px;
+}
+
+.active {
+  color: #f88379 !important;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  left: 95%;
+  top: 5%;
+}
+
+
+
+
+
+.header {
+  background-color: var(--primary-color);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:130px;
+  width: 100%;
+  z-index: -1;
+}
+
+.title h1 {
+  color: var(--secondary-color);
+  top: 40px;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  position: relative;
+}
+
+.title p {
+  color: var(--secondary-color);
+  top: 70px;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  position: relative;
+}
+
+.title back {
+  background-color: var(--primary-color);
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  width: 100%;
+  height: 320px;
+  z-index: -2;
+  -webkit-transform: skew(0,-6deg);
+  -ms-transform: skew(0,-6deg);
+  border-bottom: solid 20px;
+  border-color: #3a3a3a;
+}
+
+.image {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 130px;
+  left: 40%;
+  height: 450px;
+  width: 60%;
+  z-index: -2;
+}
+
+.subtopic subtopic1 {
+  background-color: var(--background);
+  color: var(--secondary-color);
+  padding-top: 35px;
+  margin: 0;
+  position: absolute;
+  top: 630px;
+  left: 15%;
+  height: 65px;
+  width: 15%;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 10px 10px 20px var(--shadow-1),
+  -10px -10px 20px var(--shadow-2);
+  transition: all 0.5s ease;
+}
+
+.subtopic subtopic2 {
+  background-color: var(--background);
+  color: var(--secondary-color);
+  padding-top: 35px;
+  margin: 0;
+  position: absolute;
+  top: 630px;
+  left: 33%;
+  height: 65px;
+  width: 15%;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 10px 10px 20px var(--shadow-1),
+  -10px -10px 20px var(--shadow-2);  
+  transition: all 0.5s ease;
+}
+
+.subtopic subtopic3 {
+  background-color: var(--background);
+  color: var(--secondary-color);
+  padding-top: 35px;
+  margin: 0;
+  position: absolute;
+  top: 630px;
+  left: 51%;
+  height: 65px;
+  width: 15%;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 10px 10px 20px var(--shadow-1),
+  -10px -10px 20px var(--shadow-2);
+  transition: all 0.5s ease;
+}
+
+.subtopic subtopic4 {
+  background-color: var(--background);
+  color: var(--secondary-color);
+  padding-top: 35px;
+  margin: 0;
+  position: absolute;
+  top: 630px;
+  left: 69%;
+  height: 65px;
+  width: 15%;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 10px 10px 20px var(--shadow-1),
+  -10px -10px 20px var(--shadow-2);
+  transition: all 0.5s ease;
+}
+
+.subtopic :hover {
+  color: coral;
+  box-shadow: inset 20px 20px 60px var(--shadow-1),
+  inset -20px -20px 60px var(--shadow-2);
+  transition: all 0.5s ease;
+}
+
+.subtopic subtopic2 a {
+  color: var(--secondary-color);
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.subtopic subtopic2 a:active {
+  text-decoration: none;
+}
+
+.subtopic subtopic2 a:visited {
+  text-decoration: none;
+  color: var(--secondary-color)
+}
+
+.subtopic subtopic2 a:hover {
+  color: coral;
+}
+
+.content stripe {
+  background-color: #444;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 570px;
+  left: 20%;
+  height: 20px;
+  width: 60%;
+  z-index: -3;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px var(--shadow-1),
+  -10px -10px 20px var(--shadow-2);
+}
+
+
+
+
+
+.adspace adleft {
+  background-color: purple;
+  color: white;
+  padding: 15px;
+  margin: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 150px;
+  z-index: -3;
+}
+
+.adspace adright {
+  background-color: purple;
+  color: white;
+  padding: 15px;
+  margin: 0;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 150px;
+  z-index: -3;
+}
