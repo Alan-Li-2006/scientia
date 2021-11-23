@@ -89,22 +89,28 @@ a:visited {
 
 .title h1 {
   color: var(--secondary-color);
-  top: 40px;
+  top: -10px;
   left: 0;
   padding: 0;
   margin: 0;
   text-align: center;
   position: relative;
+  font-size: 40px;
+}
+
+.title h1 span {
+  font-size: 50px;
 }
 
 .title p {
   color: var(--secondary-color);
-  top: 70px;
+  top: 30px;
   left: 0;
   padding: 0;
   margin: 0;
   text-align: center;
   position: relative;
+  font-size: 20px;
 }
 
 .title back {
@@ -122,28 +128,33 @@ a:visited {
 }
 
 
+.elements {
 
-.content stripe {
-  background-color: #444;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 570px;
-  left: 20%;
-  height: 20px;
-  width: 60%;
-  z-index: -3;
-  border-radius: 10px;
-  box-shadow: 10px 10px 20px var(--shadow-1),
-  -10px -10px 20px var(--shadow-2);
+}
+
+.elements element1 {
+  display: inline-block;
+  position: relative;
+  top: 200px;
+  left: 10%;
+  width: 80px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: yellow;
 }
 
 
 
 
 
+
+
+
+
+
 .adspace adleft {
-  background-color: purple;
+  background-color: grey;
   color: white;
   padding: 15px;
   margin: 0;
@@ -156,7 +167,7 @@ a:visited {
 }
 
 .adspace adright {
-  background-color: purple;
+  background-color: grey;
   color: white;
   padding: 15px;
   margin: 0;
