@@ -402,7 +402,7 @@ a:visited {
 
 
 .adspace adleft {
-  background-color: purple;
+  background-color: grey;
   color: white;
   padding: 15px;
   margin: 0;
@@ -415,7 +415,7 @@ a:visited {
 }
 
 .adspace adright {
-  background-color: purple;
+  background-color: grey;
   color: white;
   padding: 15px;
   margin: 0;
