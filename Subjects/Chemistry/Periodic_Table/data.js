@@ -13,16 +13,16 @@ const periodictabledata =
         period: 1,
         block: "s",
 
-        electronconfig: "",
-        radioactivity: "",
-        oxidation: "",
-        atomicradius: "",
-        electronegativity: "",
-        ionization: "",
-        density: "",
-        melting: "",
-        boiling: "",
-        yeardiscovered: "",
+        electronconfig: "1s1",
+        radioactivity: "no",
+        oxidation: "-1, 1",
+        atomicradius: "120",
+        electronegativity: "2.20",
+        ionization: "13.598",
+        density: "0.0000899",
+        melting: "14",
+        boiling: "20",
+        yeardiscovered: "1766",
         
         tablerow18col: 1,
         tablecolumn18col: 1,
@@ -40,6 +40,18 @@ const periodictabledata =
         group: 18,
         period: 1,
         block: "s",
+        
+        electronconfig: "1s2",
+        radioactivity: "no",
+        oxidation: "n/a",
+        atomicradius: "140",
+        electronegativity: "n/a",
+        ionization: "24.587",
+        density: "0.0001785",
+        melting: "1",
+        boiling: "4",
+        yeardiscovered: "1868",
+
         tablerow18col: 1,
         tablecolumn18col: 18,
         visible: true
@@ -56,6 +68,19 @@ const periodictabledata =
         group: 1,
         period: 2,
         block: "s",
+        
+        electronconfig: "[He] 2s1",
+        radioactivity: "no",
+        oxidation: "1",
+        atomicradius: "182",
+        electronegativity: "0.98",
+        ionization: "5.392",
+        density: "0.535",
+        melting: "454",
+        boiling: "1615",
+        yeardiscovered: "1817",
+        
+        
         tablerow18col: 2,
         tablecolumn18col: 1,
         visible: true
@@ -72,6 +97,19 @@ const periodictabledata =
         group: 2,
         period: 2,
         block: "s",
+        
+        
+        electronconfig: "[He] 2s2",
+        radioactivity: "no",
+        oxidation: "2",
+        atomicradius: "153",
+        electronegativity: "1.57",
+        ionization: "9.323",
+        density: "1.848",
+        melting: "1560",
+        boiling: "2743",
+        yeardiscovered: "1798",
+        
         tablerow18col: 2,
         tablecolumn18col: 2,
         visible: true
@@ -88,6 +126,18 @@ const periodictabledata =
         group: 13,
         period: 2,
         block: "p",
+        
+        electronconfig: "[He] 2s2 2p1",
+        radioactivity: "no",
+        oxidation: "1, 2, 3",
+        atomicradius: "192",
+        electronegativity: "2.04",
+        ionization: "8.298",
+        density: "2.37",
+        melting: "2348",
+        boiling: "4273",
+        yeardiscovered: "1807",
+        
         tablerow18col: 2,
         tablecolumn18col: 13,
         visible: true
@@ -104,6 +154,18 @@ const periodictabledata =
         group: 14,
         period: 2,
         block: "p",
+
+        electronconfig: "[He] 2s2 2p2",
+        radioactivity: "no",
+        oxidation: "-4, -3, -2, -1, 1, 2, 3, 4",
+        atomicradius: "170",
+        electronegativity: "2.55",
+        ionization: "11.260",
+        density: "2.26",
+        melting: "3823",
+        boiling: "4300",
+        yeardiscovered: "Ancient",
+        
         tablerow18col: 2,
         tablecolumn18col: 14,
         visible: true
@@ -120,6 +182,18 @@ const periodictabledata =
         group: 15,
         period: 2,
         block: "p",
+        
+        electronconfig: "[He] 2s2 2p3",
+        radioactivity: "no",
+        oxidation: "-3, -2, -1, 1, 2, 3, 4, 5",
+        atomicradius: "155",
+        electronegativity: "3.04",
+        ionization: "14.534",
+        density: "0.001251",
+        melting: "63",
+        boiling: "77",
+        yeardiscovered: "1772",
+        
         tablerow18col: 2,
         tablecolumn18col: 15,
         visible: true
@@ -136,6 +210,18 @@ const periodictabledata =
         group: 16,
         period: 2,
         block: "p",
+        
+        electronconfig: "[He] 2s2 2p4",
+        radioactivity: "no",
+        oxidation: "-2, -1, 1, 2",
+        atomicradius: "152",
+        electronegativity: "3.44",
+        ionization: "13.618",
+        density: "0.001429",
+        melting: "55",
+        boiling: "90",
+        yeardiscovered: "1774",
+        
         tablerow18col: 2,
         tablecolumn18col: 16,
         visible: true
@@ -152,6 +238,18 @@ const periodictabledata =
         group: 17,
         period: 2,
         block: "p",
+        
+        electronconfig: "[He] 2s2 2p5",
+        radioactivity: "no",
+        oxidation: "-2, -1, 1, 2",
+        atomicradius: "152",
+        electronegativity: "3.44",
+        ionization: "13.618",
+        density: "0.001429",
+        melting: "55",
+        boiling: "90",
+        yeardiscovered: "1774",
+        
         tablerow18col: 2,
         tablecolumn18col: 17,
         visible: true
