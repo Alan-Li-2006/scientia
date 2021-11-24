@@ -173,6 +173,7 @@ a:visited {
 .content quiz p:visited {
   color: var(--secondary-color);
   text-decoration: none;
+  font-size: 22px;
 }
 
 .subtopic subtopic1 {
