@@ -104,13 +104,14 @@
 
 
 	<div id="infoboxbackground"
-	style="background-color: #000000; position: absolute;
+	style="background-color: #000; position: absolute;
 	left: 0px; right: 0px; top: 0px; bottom: 0px;
+	height: 1300px;
     opacity: 0.8; visibility: hidden;"></div>
 
 	<div id="infobox"
 	 class="border roundcorners"
-	style="position:absolute;  width: 500px; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #FFFFFF; visibility: hidden;">
+	style="position:absolute;  width: 500px; top: 900px; left: 50%; transform: translate(-50%, -50%); background-color: var(--primary-color); color: var(--secondary-color); visibility: hidden;">
 
 		<table style="width:100%;">
     		<tr><th colspan="2" id="infoName" class="thelementname"></th></tr>
@@ -128,12 +129,12 @@
 			<tr><th>Electron Configuration</th><td id="infoElectronConfig"></td></tr>
 			<tr><th>Radioactivity</th><td id="infoRadioactivity"></td></tr>
 			<tr><th>Oxidation States</th><td id="infoOxidation"></td></tr>
-			<tr><th>Atomic Radius</th><td id="infoAtomicRadius"></td></tr>
-			<tr><th>Electronegativty</th><td id="infoElectronegativity"></td></tr>
-			<tr><th>Ionization Energy</th><td id="infoIonization"></td></tr>
-			<tr><th>Density</th><td id="infoDensity"></td></tr>
-			<tr><th>Melting Point</th><td id="infoMelting"></td></tr>
-			<tr><th>Boiling Point</th><td id="infoBoiling"></td></tr>
+			<tr><th>Atomic Radius (van der Waals) (pm)</th><td id="infoAtomicRadius"></td></tr>
+			<tr><th>Electronegativity (Pauling Scale)</th><td id="infoElectronegativity"></td></tr>
+			<tr><th>Ionization Energy (eV)</th><td id="infoIonization"></td></tr>
+			<tr><th>Density (g/cm³)</th><td id="infoDensity"></td></tr>
+			<tr><th>Melting Point (Kelvin)</th><td id="infoMelting"></td></tr>
+			<tr><th>Boiling Point (Kelvin)</th><td id="infoBoiling"></td></tr>
 			<tr><th>Year Discovered</th><td id="infoYearDiscovered"></td></tr>
         	<tr><td colspan="2"><div id="btnCloseInfoBox" class="button">Close</div></td></tr>
 		</table>

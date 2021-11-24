@@ -157,9 +157,9 @@ z-index: 1;
 .tablediv
 {
     position:absolute;
-    top: 440px;
+    top: 465px;
     left: 0px;
-    right: 160px;
+    right: 180px;
     overflow:auto;
     color:#000000;
     border-color: var(--background);
@@ -170,7 +170,7 @@ z-index: 1;
 .rightdiv
 {
     position:absolute;
-    top:440px;
+    top:540px;
     right:0px;
     width:140px;
     overflow:auto;
@@ -178,8 +178,8 @@ z-index: 1;
     -20px -20px 60px var(--shadow-2);
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    padding: 8px;
-    background-color: grey;
+    padding: 10px;
+    background-color: var(--background);
 }
 
 .linkpanel
@@ -333,6 +333,30 @@ input[type=radio]
     width: 124px;
 }
 
+.infoboxbackground {
+    background-color: var(--secondary-color);
+    position: absolute;
+	left: 0px; 
+    right: 0px; 
+    top: 0px; 
+    bottom: 0px;
+	height: 1300px;
+    opacity: 0.8; 
+    visibility: hidden;
+}
+
+.infobox infobox {
+    position:absolute;
+    width: 500px;
+    top: 900px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    visibility: hidden;
+    border-radius: 10px;
+}
+
 .red
 {
 	color: #FF0000;
@@ -369,6 +393,12 @@ input[type=radio]
     cursor: pointer;
     width: 5%;
     height: 10%;
+}
+
+.elementcell:hover {
+    box-shadow: inset 20px 20px 60px var(--shadow-1),
+    inset -20px -20px 60px var(--shadow-2);
+    transition: all 0.5s ease;
 }
 
 .elementcellfaded

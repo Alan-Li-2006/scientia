@@ -41,6 +41,18 @@ class PeriodicTableInfoBox
 		document.getElementById("infoPeriod").innerHTML = element.period;
 		document.getElementById("infoBlock").innerHTML = element.block;
 
+		document.getElementById("infoElectronConfig").innerHTML = element.electronconfig;
+		document.getElementById("infoRadioactivity").innerHTML = element.radioactivity;
+		document.getElementById("infoOxidation").innerHTML = element.oxidation;
+		document.getElementById("infoAtomicRadius").innerHTML = element.atomicradius;
+		document.getElementById("infoElectronegativity").innerHTML = element.electronnegativity;
+		document.getElementById("infoIonization").innerHTML = element.ionization;
+		document.getElementById("infoDensity").innerHTML = element.density;
+		document.getElementById("infoMelting").innerHTML = element.melting;
+		document.getElementById("infoBoiling").innerHTML = element.boiling;
+		document.getElementById("infoYearDiscovered").innerHTML = element.yeardiscovered;
+
+
 		document.getElementById(this._infoboxbackgroundid).style.visibility = "visible";
 		document.getElementById(this._infoboxid).style.visibility = "visible";
 	}
