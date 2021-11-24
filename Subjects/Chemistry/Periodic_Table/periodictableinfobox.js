@@ -45,7 +45,7 @@ class PeriodicTableInfoBox
 		document.getElementById("infoRadioactivity").innerHTML = element.radioactivity;
 		document.getElementById("infoOxidation").innerHTML = element.oxidation;
 		document.getElementById("infoAtomicRadius").innerHTML = element.atomicradius;
-		document.getElementById("infoElectronegativity").innerHTML = element.electronnegativity;
+		document.getElementById("infoElectronegativity").innerHTML = element.electronegativity;
 		document.getElementById("infoIonization").innerHTML = element.ionization;
 		document.getElementById("infoDensity").innerHTML = element.density;
 		document.getElementById("infoMelting").innerHTML = element.melting;
