@@ -13,7 +13,7 @@
   --secondary-color: #fff;
   --shadow-1: #515151;
   --shadow-2: #6d6d6d;
-  --background: #5F5F5F;
+  --background: #5f5f5f;
 }
 
 body {
@@ -71,10 +71,6 @@ a:visited {
   top: 5%;
 }
 
-
-
-
-
 .header {
   background-color: var(--primary-color);
   padding: 0;
@@ -82,7 +78,7 @@ a:visited {
   position: absolute;
   top: 0;
   left: 0;
-  height:130px;
+  height: 130px;
   width: 100%;
   z-index: -1;
 }
@@ -115,8 +111,8 @@ a:visited {
   width: 100%;
   height: 320px;
   z-index: -2;
-  -webkit-transform: skew(0,-6deg);
-  -ms-transform: skew(0,-6deg);
+  -webkit-transform: skew(0, -6deg);
+  -ms-transform: skew(0, -6deg);
   border-bottom: solid 20px;
   border-color: #3a3a3a;
 }
@@ -144,8 +140,7 @@ a:visited {
   width: 15%;
   border-radius: 25px;
   text-align: center;
-  box-shadow: 10px 10px 20px var(--shadow-1),
-  -10px -10px 20px var(--shadow-2);
+  box-shadow: 10px 10px 20px var(--shadow-1), -10px -10px 20px var(--shadow-2);
   transition: all 0.5s ease;
 }
 
@@ -161,8 +156,7 @@ a:visited {
   width: 15%;
   border-radius: 25px;
   text-align: center;
-  box-shadow: 10px 10px 20px var(--shadow-1),
-  -10px -10px 20px var(--shadow-2);  
+  box-shadow: 10px 10px 20px var(--shadow-1), -10px -10px 20px var(--shadow-2);
   transition: all 0.5s ease;
 }
 
@@ -178,8 +172,7 @@ a:visited {
   width: 15%;
   border-radius: 25px;
   text-align: center;
-  box-shadow: 10px 10px 20px var(--shadow-1),
-  -10px -10px 20px var(--shadow-2);
+  box-shadow: 10px 10px 20px var(--shadow-1), -10px -10px 20px var(--shadow-2);
   transition: all 0.5s ease;
 }
 
@@ -195,15 +188,14 @@ a:visited {
   width: 15%;
   border-radius: 25px;
   text-align: center;
-  box-shadow: 10px 10px 20px var(--shadow-1),
-  -10px -10px 20px var(--shadow-2);
+  box-shadow: 10px 10px 20px var(--shadow-1), -10px -10px 20px var(--shadow-2);
   transition: all 0.5s ease;
 }
 
 .subtopic :hover {
-  color: coral;
+  color: #f88379;
   box-shadow: inset 20px 20px 60px var(--shadow-1),
-  inset -20px -20px 60px var(--shadow-2);
+    inset -20px -20px 60px var(--shadow-2);
   transition: all 0.5s ease;
 }
 
@@ -220,11 +212,11 @@ a:visited {
 
 .subtopic subtopic2 a:visited {
   text-decoration: none;
-  color: var(--secondary-color)
+  color: var(--secondary-color);
 }
 
 .subtopic subtopic2 a:hover {
-  color: coral;
+  color: #f88379;
 }
 
 .content stripe {
@@ -238,13 +230,8 @@ a:visited {
   width: 60%;
   z-index: -3;
   border-radius: 10px;
-  box-shadow: 10px 10px 20px var(--shadow-1),
-  -10px -10px 20px var(--shadow-2);
+  box-shadow: 10px 10px 20px var(--shadow-1), -10px -10px 20px var(--shadow-2);
 }
-
-
-
-
 
 .adspace adleft {
   background-color: purple;
