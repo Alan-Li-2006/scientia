@@ -71,10 +71,6 @@ a:visited {
   top: 5%;
 }
 
-
-
-
-
 .header {
   background-color: var(--primary-color);
   padding: 0;
@@ -154,6 +150,29 @@ a:visited {
   
   box-shadow: 10px 10px 20px var(--shadow-1),
   -10px -10px 20px var(--shadow-2);
+}
+
+.content quiz:hover {
+  box-shadow: inset 20px 20px 60px #d99438, 
+  inset -20px -20px 60px #ffc84c;
+  transition: all 0.5s ease;
+}
+
+.content quiz p {
+  text-decoration: none;
+  color: var(--secondary-color);
+  position: relative;
+  top: 10px;
+}
+
+.content quiz p:hover {
+  color: var(--primary-color);
+  transition: all 0.5s ease;
+}
+
+.content quiz p:visited {
+  color: var(--secondary-color);
+  text-decoration: none;
 }
 
 .subtopic subtopic1 {
