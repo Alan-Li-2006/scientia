@@ -95,12 +95,24 @@ body {
   overflow: hidden;
 }
 
+.rec:before {
+  background: #f88379;
+}
+
 .chem:before {
   background: #ffae42;
 }
 
 .bio:before {
   background: #51c878;
+}
+
+.phys:before {
+  background: #eb3c62;
+}
+
+.astro:before {
+  background: #2e3e64;
 }
 
 .wrapper .card:before {

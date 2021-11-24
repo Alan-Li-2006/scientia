@@ -96,11 +96,7 @@ next_btn.addEventListener('click', function () {
 function showQuestions(index) {
   const que_text = document.querySelector('.que_text');
   let que_tag =
-    '<span>' +
-    numbers[index] +
-    '. ' +
-    questions[index].question +
-    '</span>';
+    '<span>' + numbers[index] + '. ' + questions[index].question + '</span>';
   let option_tag =
     '<div class="option">' +
     questions[index].options[0] +
@@ -125,6 +121,19 @@ function showQuestions(index) {
 let tickIcon = '<div class="icon tick"><i class="fas fa-check"></i></div>';
 let crossIcon = '<div class="icon cross"><i class="fas fa-times"></i></div>';
 
+let subtopicRecommendations = JSON.parse(
+  localStorage.getItem('suggestionValue')
+);
+
+if (subtopicRecommendations == null) {
+  subtopicRecommendations = {
+    bonds: 0,
+    atoms: 0,
+    periodicTable: 0,
+    naturalSelection: 0,
+  };
+}
+
 function optionSelected(answer) {
   clearInterval(counter);
   clearInterval(counterLine);
@@ -141,6 +150,11 @@ function optionSelected(answer) {
     answer.classList.add('incorrect');
     console.log('Incorrect answer ');
     answer.insertAdjacentHTML('beforeend', crossIcon);
+
+    subtopicRecommendations.bonds += 1;
+    let subRecsSerialised = JSON.stringify(subtopicRecommendations);
+    localStorage.setItem('suggestionValue', subRecsSerialised);
+    console.log(subtopicRecommendations);
 
     //Automatically selecting correct answer if answer is incorrect
     for (let i = 0; i < allOptions; i++) {
