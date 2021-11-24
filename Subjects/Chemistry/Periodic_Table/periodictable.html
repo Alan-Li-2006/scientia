@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Periodic Table</title>
+    <meta charset="utf-8" />
+    <link href="periodictable.css" rel="stylesheet" />
+	<link rel="shortcut icon" href="/Resources/Scientia_coral.png" />
+</head>
+
+<body>
+	<div class="menu">
+        <ul id="menu">
+          <li class="logo"><img src="/Resources/Scientia_coral.png" /></li>
+          <li><a href="/Mainpage/index.html">Home</a></li>
+          <li><a href="/Aboutus/about.html">About</a></li>
+          <li><a href="/Subjects/subjects.html">Subjects</a></li>
+          <li><a href="/Contact/contact.html">Contact Us</a></li>
+          <!-- Put toggle light/dark mode here!! -->
+        </ul>
+        <img class="icon" src="/Resources/moon.png"/>
+      </div>
+      <header class="header"></header>
+
+	  <div class="title">
+        <h1><span>P</span>ERIODIC TABLE</h1>
+        <p>Interactivity that works.</p>
+        <back></back>
+      </div>
+      <div class="adspace">
+        <adleft></adleft>
+      </div>
+
+
+	<div class="maindiv">
+
+		<div class="banner"></div>
+
+		<div class="linkpanel"><a href="http://www.codedrome.com" target="_blank">codedrome.com</a></div>
+
+    	<div class="roundcorners leftdiv">
+
+			<table style="width:100%;">
+                <tr>
+                    <td colspan="2"><div id="btnApplyFilter"></div></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><div id="btnClearFilter"></div></td>
+                </tr>
+
+            </table>
+
+    	</div>
+
+    	<div id="periodictablediv" class="tablediv">
+			<table id="periodictable" style="width: 100%; height: 100%;"></table>
+		</div>
+
+    	<div class="rightdiv">
+
+			<table style="width:100%;">
+
+            	<tr>
+					<td><div class="label">Color by Category</div></td>
+				</tr>
+            	<tr>
+					<td class="radiobutton"><div class="radiobutton"><input type="radio" name="colorby" value="colorbycategory" id="colorcategory" checked /></div></td>
+				</tr>
+
+            	<tr>
+					<td><div class="label">Color by Block</div></td>
+				</tr>
+            	<tr>
+					<td class="radiobutton"><div class="radiobutton"><input type="radio" name="colorby" value="colorbyblock" id="colorblock" /></div></td>
+				</tr>
+
+            </table>
+
+			<table id="categorykey" style="width:100%; display: inline;">
+            	<tr><td><div class="alkalimetal colorkey roundcorners">Alkali metal</div></td></tr>
+            	<tr><td><div class="alkalineearthmetal colorkey roundcorners">Alkaline earth metal</div></td></tr>
+            	<tr><td><div class="lanthanide colorkey roundcorners">Lanthanide</div></td></tr>
+            	<tr><td><div class="actinide colorkey roundcorners">Actinide</div></td></tr>
+            	<tr><td><div class="transitionmetal colorkey roundcorners">Transition metal</div></td></tr>
+            	<tr><td><div class="posttransitionmetal colorkey roundcorners">Post-transition metal</div></td></tr>
+            	<tr><td><div class="metalloid colorkey roundcorners">Metalloid</div></td></tr>
+            	<tr><td><div class="reactivenonmetal colorkey roundcorners">Reactive nonmetal</div></td></tr>
+            	<tr><td><div class="noblegas colorkey roundcorners">Noble gas</div></td></tr>
+            	<tr><td><div class="unknown colorkey roundcorners">Unknown</div></td></tr>
+            </table>
+
+			<table id="blockkey" style="width:100%; display: none;">
+            	<tr><td><div class="sblock colorkey roundcorners">s</div></td></tr>
+            	<tr><td><div class="dblock colorkey roundcorners">d</div></td></tr>
+            	<tr><td><div class="fblock colorkey roundcorners">f</div></td></tr>
+            	<tr><td><div class="pblock colorkey roundcorners">p</div></td></tr>
+            </table>
+
+		</div>
+
+	</div>
+
+
+	<div id="infoboxbackground"
+	style="background-color: #000; position: absolute;
+	left: 0px; right: 0px; top: 0px; bottom: 0px;
+	height: 1300px;
+    opacity: 0.8; visibility: hidden;"></div>
+
+	<div id="infobox"
+	 class="border roundcorners"
+	style="position:absolute;  width: 500px; top: 900px; left: 50%; transform: translate(-50%, -50%); background-color: var(--primary-color); color: var(--secondary-color); visibility: hidden;">
+
+		<table style="width:100%;">
+    		<tr><th colspan="2" id="infoName" class="thelementname"></th></tr>
+    		<tr><th>Atomic number</th><td id="infoAtomicNumber"></th></tr>
+        	<tr><th>Chemical Symbol</th><td id="infoChemicalSymbol"></td></tr>
+        	<tr><th>Category</th><td id="infoCategory"></td></tr>
+        	<tr><th>Atomic weight - conventional</th><td id="infoAtomicWeightConventional"></td></tr>
+        	<tr><th>Atomic weight - standard</th><td id="infoAtomicWeightStandard"></td></tr>
+        	<tr><th>Occurrence</th><td id="infoOccurrence"></td></tr>
+        	<tr><th>State of matter</th><td id="infoStateOfMatter"></td></tr>
+        	<tr><th>Group</th><td id="infoGroup"></td></tr>
+        	<tr><th>Period</th><td id="infoPeriod"></td></tr>
+        	<tr><th>Block</th><td id="infoBlock"></td></tr>
+
+			<tr><th>Electron Configuration</th><td id="infoElectronConfig"></td></tr>
+			<tr><th>Radioactivity</th><td id="infoRadioactivity"></td></tr>
+			<tr><th>Oxidation States</th><td id="infoOxidation"></td></tr>
+			<tr><th>Atomic Radius (van der Waals) (pm)</th><td id="infoAtomicRadius"></td></tr>
+			<tr><th>Electronegativity (Pauling Scale)</th><td id="infoElectronegativity"></td></tr>
+			<tr><th>Ionization Energy (eV)</th><td id="infoIonization"></td></tr>
+			<tr><th>Density (g/cm³)</th><td id="infoDensity"></td></tr>
+			<tr><th>Melting Point (Kelvin)</th><td id="infoMelting"></td></tr>
+			<tr><th>Boiling Point (Kelvin)</th><td id="infoBoiling"></td></tr>
+			<tr><th>Year Discovered</th><td id="infoYearDiscovered"></td></tr>
+        	<tr><td colspan="2"><div id="btnCloseInfoBox" class="button">Close</div></td></tr>
+		</table>
+
+	</div>
+
+    <script src="data.js"></script>
+    <script src="periodictable.js"></script>
+    <script src="periodictableinfobox.js"></script>
+    <script src="periodictabledisplay.js"></script>
+    <script src="periodictablepage.js"></script>
+	<script src="/script.js"></script>
+
+</body>
+
+</html>

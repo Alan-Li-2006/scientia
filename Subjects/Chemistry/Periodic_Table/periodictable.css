@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #444;
+  --shadow-1: #c6c6c6;
+  --shadow-2: #fff;
+  --background: #e9e9e9;
+}
+
+.dark-theme {
+  --primary-color: #444;
+  --secondary-color: #fff;
+  --shadow-1: #515151;
+  --shadow-2: #6d6d6d;
+  --background: #5F5F5F;
+}
+
+body {
+  background: var(--background);
+  font-family: 'Poppins', sans-serif;
+}
+
+.menu ul {
+  position: relative;
+  display: inline-flex;
+  margin: 50px;
+  left: -40px;
+  z-index: 2;
+}
+
+.menu ul li {
+  list-style: none;
+  margin: 0 20px;
+  color: #b2b1b1;
+  cursor: pointer;
+}
+
+.menu ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: #b2b1b1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.logo img {
+  width: 60px;
+  margin-top: -12px;
+  margin-right: 5px;
+}
+
+.active {
+  color: #f88379 !important;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  left: 95%;
+  top: 5%;
+  z-index: 2;
+}
+
+
+.header {
+    background-color: var(--primary-color);
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:130px;
+    width: 100%;
+    z-index: 1;
+}
+  
+.title h1 {
+color: var(--secondary-color);
+top: -10px;
+left: 0;
+padding: 0;
+margin: 0;
+text-align: center;
+position: relative;
+font-size: 40px;
+z-index: 2;
+}
+
+.title h1 span {
+color: #ffae42;
+font-size: 50px;
+}
+
+.title p {
+color: var(--secondary-color);
+top: 30px;
+left: 0;
+padding: 0;
+margin: 0;
+text-align: center;
+position: relative;
+font-size: 20px;
+z-index: 2;
+}
+
+.title back {
+background-color: var(--primary-color);
+position: absolute;
+left: 0px;
+top: 50px;
+width: 100%;
+height: 320px;
+z-index: -2;
+-webkit-transform: skew(0,-6deg);
+-ms-transform: skew(0,-6deg);
+border-bottom: solid 20px;
+border-color: #3a3a3a;
+z-index: 1;
+}
+
+.adspace adleft {
+    left: 0;
+    top: 0;
+    height:1300px;
+    width:10px;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+.maindiv
+{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+
+.tablediv
+{
+    position:absolute;
+    top: 465px;
+    left: 0px;
+    right: 180px;
+    overflow:auto;
+    color:#000000;
+    border-color: var(--background);
+    padding:4px;
+    height: 800px;   
+}
+
+.rightdiv
+{
+    position:absolute;
+    top:540px;
+    right:0px;
+    width:140px;
+    overflow:auto;
+    box-shadow: 20px 20px 60px var(--shadow-1),
+    -20px -20px 60px var(--shadow-2);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 10px;
+    background-color: var(--background);
+}
+
+.linkpanel
+{
+    cursor: pointer;
+    cursor: hand;
+    color:#ffffff;
+    position: absolute;
+    right: 16px;
+    top: 8px;
+    height: 42px;
+    line-height: 42px;
+}
+
+A:link {text-decoration: none; color:#FFFFFF; outline : none; border : 0;}
+A:visited {text-decoration: none; color:#FFFFFF; outline : none; border : 0;}
+A:active {text-decoration: none; color:#FFFFFF; outline : none; border : 0;}
+A:hover {text-decoration: underline; color:#FFFFFF; outline : none; border : 0;}
+
+.button
+{
+    cursor: pointer;
+    cursor: hand;
+    text-align: center;
+    overflow: hidden;
+    margin:4px;
+    border-radius: 4px 4px 4px 4px;
+    font-size: small;
+    padding: 2px;
+    border: solid 1px #404040;
+    height: 20px;
+	line-height: 20px;
+    color: #FFFFFF;
+    background: linear-gradient(#282C34, #000000);
+}
+
+.button:hover
+{
+    background: linear-gradient(#282C34, #202020);
+}
+
+.button:active
+{
+	box-shadow: inset 1px 1px 1px #000000;
+    background: linear-gradient(#282C34, #202020);
+}
+
+.roundcorners
+{
+	border:2px solid;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.label
+{
+    font-size: small;
+    overflow: hidden;
+    color: var(--secondary-color);
+    margin:4px;
+    width: 120px;
+}
+
+.colorkey
+{
+    font-size: small;
+    overflow: hidden;
+    color: #000000;
+    margin: 4px;
+    padding: 2px;
+    width: 120px;
+}
+
+select
+{
+    font-size: small;
+    overflow: hidden;
+    margin:4px;
+    width: 124px;
+}
+
+.labelbold
+{
+    font-weight: bold;
+}
+
+
+table
+{
+    border-width: 0px;
+    table-layout:fixed;
+}
+
+td
+{
+    border-width: 0px;
+    padding:0px;
+    font-size: small;
+    margin:4px;
+}
+
+tr
+{
+    border-width: 0px;
+    padding:0px;
+}
+
+th
+{
+    border-width: 0px;
+    padding: 4px;
+    font-size: small;
+    overflow: hidden;
+    margin:4px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.thelementname
+{
+    border-width: 0px;
+    padding: 4px;
+    font-size: large;
+    overflow: hidden;
+    margin:4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+hr
+{
+    height:1px;
+}
+
+input[type=text]
+{
+    margin: 4px;
+    border:1px solid #808080;
+}
+
+input[type=number]
+{
+    margin: 4px;
+    border:1px solid #808080;
+}
+
+input[type=radio]
+{
+    margin: 4px;
+    margin-left: 4px;
+    border:1px solid #808080;
+    width: 124px;
+}
+
+.infoboxbackground {
+    background-color: var(--secondary-color);
+    position: absolute;
+	left: 0px; 
+    right: 0px; 
+    top: 0px; 
+    bottom: 0px;
+	height: 1300px;
+    opacity: 0.8; 
+    visibility: hidden;
+}
+
+.infobox infobox {
+    position:absolute;
+    width: 500px;
+    top: 900px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    visibility: hidden;
+    border-radius: 10px;
+}
+
+.red
+{
+	color: #FF0000;
+}
+
+.green
+{
+	color: #00C000;
+}
+
+.redbg
+{
+	background-color: #FF0000;
+}
+
+.greenbg
+{
+	background-color: #00A000;
+}
+
+.cell
+{
+    width: 5%;
+    height: 10%;
+}
+
+.elementcell
+{
+    font-size: 8px;
+    text-align: center;
+    overflow: hidden;
+    border:2px solid #404040;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    width: 5%;
+    height: 10%;
+}
+
+.elementcell:hover {
+    box-shadow: inset 20px 20px 60px var(--shadow-1),
+    inset -20px -20px 60px var(--shadow-2);
+    transition: all 0.5s ease;
+}
+
+.elementcellfaded
+{
+    opacity: 0.1;
+}
+
+.chemicalsymbol
+{
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.groupname
+{
+    font-size: 8px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.headingcell
+{
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+
+.alkalimetal
+{
+    background-color: #FF6666;
+}
+
+
+.alkalineearthmetal
+{
+    background-color: #ffdead;
+}
+
+.lanthanide
+{
+    background-color: #ffbfff;
+}
+
+.actinide
+{
+    background-color: #ff99cc;
+}
+
+.transitionmetal
+{
+    background-color: #ffc0c0;
+}
+
+.posttransitionmetal
+{
+    background-color: #cccccc;
+}
+
+.metalloid
+{
+    background-color: #cccc99;
+}
+
+.reactivenonmetal
+{
+    background-color: #f0ff8f;
+}
+
+
+.noblegas
+{
+    background-color: #c0ffff;
+}
+
+
+.unknown
+{
+    background-color: #e8e8e8;
+}
+
+
+.sblock
+{
+    background-color: #ff9999;
+}
+
+.dblock
+{
+    background-color: #9ecafa;
+}
+
+.fblock
+{
+    background-color: #9bff99;
+}
+
+.pblock
+{
+    background-color: #fdff8c;
+}
