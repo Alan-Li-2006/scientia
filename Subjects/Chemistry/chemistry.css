@@ -162,7 +162,7 @@ a:visited {
   text-decoration: none;
   color: var(--secondary-color);
   position: relative;
-  top: 10px;
+  font-size: 22px;
 }
 
 .content quiz p:hover {

@@ -97,7 +97,7 @@ function showQuestions(index) {
   const que_text = document.querySelector('.que_text');
   let que_tag =
     '<span>' +
-    questions[index].numb +
+    numbers[index] +
     '. ' +
     questions[index].question +
     '</span>';
