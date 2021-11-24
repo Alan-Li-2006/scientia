@@ -12,6 +12,18 @@ const periodictabledata =
         group: 1,
         period: 1,
         block: "s",
+
+        electronconfig: "",
+        radioactivity: "",
+        oxidation: "",
+        atomicradius: "",
+        electronegativity: "",
+        ionization: "",
+        density: "",
+        melting: "",
+        boiling: "",
+        yeardiscovered: "",
+        
         tablerow18col: 1,
         tablecolumn18col: 1,
         visible: true
