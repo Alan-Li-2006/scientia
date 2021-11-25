@@ -29,7 +29,6 @@ icon.addEventListener('click', function () {
 
 //Show Points
 
-
 //Points System
 if (localStorage.getItem('points') == null) {
   localStorage.setItem('points', 1000);
