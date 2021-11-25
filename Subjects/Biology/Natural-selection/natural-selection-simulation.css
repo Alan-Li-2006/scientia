@@ -71,6 +71,12 @@ a:visited {
   top: 5%;
 }
 
+
+
+
+
+
+
 .header {
   background-color: var(--primary-color);
   padding: 0;
@@ -81,11 +87,6 @@ a:visited {
   height:130px;
   width: 100%;
   z-index: -1;
-}
-
-.title {
-  padding: 0;
-  margin: 0;
 }
 
 .title h1 {
@@ -114,6 +115,15 @@ a:visited {
   font-size: 20px;
 }
 
+
+.title p {
+  color: var(--secondary-color);
+  top: 10px;
+  padding: 0;
+  text-align: center;
+  position: relative;
+} 
+
 .title back {
   background-color: var(--primary-color);
   position: absolute;
@@ -136,7 +146,7 @@ a:visited {
   top: 480px;
   left: 15%;
   height: fit-content;
-  width: 37%;
+  width: 68%;
   line-height: 25px;
 }
 
@@ -178,10 +188,10 @@ a:visited {
   padding: 20px;
   margin: 0;
   position: absolute;
-  top: 875px;
+  top: 675px;
   left: 15%;
   height: fit-content;
-  width: 68%;
+  width: 37%;
   line-height: 25px;
 }
 
@@ -190,22 +200,10 @@ a:visited {
   padding: 20px;
   margin: 0;
   position: absolute;
-  top: 1150px;
+  top: 1200px;
   left: 15%;
   height: fit-content;
-  width: 68%;
-  line-height: 25px;
-}
-
-.content textbox3pissedoff {
-  color: var(--secondary-color);
-  padding: 20px;
-  margin: 0;
-  position: absolute;
-  top: 1630px;
-  left: 15%;
-  height: fit-content;
-  width: 34%;
+  width: 27%;
   line-height: 25px;
 }
 
@@ -214,7 +212,7 @@ a:visited {
   padding: 20px;
   margin: 0;
   position: absolute;
-  top: 1895px;
+  top: 1550px;
   left: 15%;
   height: fit-content;
   width: 68%;
@@ -226,10 +224,10 @@ a:visited {
   padding: 20px;
   margin: 0;
   position: absolute;
-  top: 2135px;
-  left: 51%;
+  top: 2450px;
+  left: 15%;
   height: fit-content;
-  width: 32%;
+  width: 68%;
   line-height: 26px;
 }
 
@@ -238,10 +236,10 @@ a:visited {
   padding: 20px;
   margin: 0;
   position: absolute;
-  top: 3000px;
+  top: 2750px;
   left: 15%;
   height: fit-content;
-  width: 34%;
+  width: 68%;
   line-height: 25px;
 }
 
@@ -250,46 +248,10 @@ a:visited {
   padding: 20px;
   margin: 0;
   position: absolute;
-  top: 3320px;
-  left: 50%;
-  height: fit-content;
-  width: 34%;
-  line-height: 25px;
-}
-
-.content textbox4c {
-  color: var(--secondary-color);
-  padding: 20px;
-  margin: 0;
-  position: absolute;
-  top: 3720px;
+  top: 2920px;
   left: 15%;
   height: fit-content;
-  width: 33%;
-  line-height: 25px;
-}
-
-.content textbox5a {
-  color: var(--secondary-color);
-  padding: 20px;
-  margin: 0;
-  position: absolute;
-  top: 3800px;
-  left: 15%;
-  height: fit-content;
-  width: 33%;
-  line-height: 25px;
-}
-
-.content textbox5b {
-  color: var(--secondary-color);
-  padding: 20px;
-  margin: 0;
-  position: absolute;
-  top: 4070px;
-  left: 15%;
-  height: fit-content;
-  width: 68%;
+  width: 31%;
   line-height: 25px;
 }
 
@@ -316,7 +278,11 @@ a:visited {
   border-radius: 10px;
 }
 
-
+.content iframe {
+  position: absolute;
+  left: 220px;
+  top: 600px;
+}
 
 
 
@@ -324,13 +290,14 @@ a:visited {
 
 
 .image-gallery gallery1 {
-  content: url(/Resources/Bonds_1.png);
+  content: url(/Resources/NS_1.png);
   padding: 0;
   margin: 0;
   position: absolute;
-  top: 570px;
+  top: 750px;
   left: 55%;
-  height: fit-content;
+  object-fit: contain;
+  height: 320px;
   width: 29%;
   border-radius: 25px;
   box-shadow: 10px 10px 20px var(--shadow-1),
@@ -338,74 +305,50 @@ a:visited {
 }
 
 .image-gallery gallery2 {
-  content: url(/Resources/Bonds_2.png);
+  content: url(/Resources/NS_2.png);
   padding: 0;
   margin: 0;
   position: absolute;
-  top: 1675px;
-  left: 51%;
-  height: 200px;
-  width: 33%;
+  top: 1250px;
+  left: 45%;
+  object-fit: cover;
+  height: 300px;
+  width: 40%;
   border-radius: 25px;
   box-shadow: 10px 10px 20px var(--shadow-1),
   -10px -10px 20px var(--shadow-2);
 }
 
 .image-gallery gallery3 {
-  content: url(/Resources/Bonds_3.png);
+  content: url(/Resources/NS_3.png);
   padding: 0;
   margin: 0;
   position: absolute;
-  top: 2175px;
+  object-fit: cover;
+  top: 2170px;
   left: 16%;
   height: 300px;
-  width: 34%;
+  width: 68%;
   border-radius: 25px;
   box-shadow: 10px 10px 20px var(--shadow-1),
   -10px -10px 20px var(--shadow-2);
 }
 
 .image-gallery gallery4 {
-  content: url(/Resources/Bonds_4.png);
+  content: url(/Resources/NS_4.png);
   padding: 0;
   margin: 0;
   position: absolute;
-  top: 3100px;
-  left: 52%;
-  height: 230px;
+  top: 2960px;
+  object-fit: cover;
+  left: 50%;
+  height: 340px;
   width: 33%;
   border-radius: 25px;
   box-shadow: 10px 10px 20px var(--shadow-1),
   -10px -10px 20px var(--shadow-2);
 }
 
-.image-gallery gallery5 {
-  content: url(/Resources/Bonds_5.png);
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 3410px;
-  left: 16%;
-  height: 300px;
-  width: 33%;
-  border-radius: 25px;
-  box-shadow: 10px 10px 20px var(--shadow-1),
-  -10px -10px 20px var(--shadow-2);
-}
-
-.image-gallery gallery6 {
-  content: url(/Resources/Bonds_6.png);
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 3870px;
-  left: 51%;
-  height: 210px;
-  width: 33%;
-  border-radius: 25px;
-  box-shadow: 10px 10px 20px var(--shadow-1),
-  -10px -10px 20px var(--shadow-2);
-}
 
 
 
@@ -419,7 +362,7 @@ a:visited {
   position: absolute;
   top: 130px;
   left: 0px;
-  height: 4100px;
+  height: 1300px;
   width: 150px;
   z-index: -3;
 }
@@ -432,7 +375,7 @@ a:visited {
   position: absolute;
   top: 130px;
   right: 0px;
-  height: 4100px;
+  height: 1300px;
   width: 150px;
   z-index: -3;
 }

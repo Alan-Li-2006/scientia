@@ -13,7 +13,7 @@
   --secondary-color: #fff;
   --shadow-1: #515151;
   --shadow-2: #6d6d6d;
-  --background: #5f5f5f;
+  --background: #5F5F5F;
 }
 
 body {
@@ -78,41 +78,48 @@ a:visited {
   position: absolute;
   top: 0;
   left: 0;
-  height: 130px;
+  height:130px;
   width: 100%;
   z-index: -1;
 }
 
 .title h1 {
   color: var(--secondary-color);
-  top: 40px;
+  top: -10px;
   left: 0;
   padding: 0;
   margin: 0;
   text-align: center;
   position: relative;
+  font-size: 40px;
+}
+
+.title h1 span {
+  color: #51c878;
+  font-size: 50px;
 }
 
 .title p {
   color: var(--secondary-color);
-  top: 70px;
+  top: 30px;
   left: 0;
   padding: 0;
   margin: 0;
   text-align: center;
   position: relative;
+  font-size: 20px;
 }
 
 .title back {
   background-color: var(--primary-color);
   position: absolute;
   left: 0px;
-  top: 50px;
+  top: -50px;
   width: 100%;
-  height: 320px;
+  height: 420px;
   z-index: -2;
-  -webkit-transform: skew(0, -6deg);
-  -ms-transform: skew(0, -6deg);
+  -webkit-transform: skew(0,-6deg);
+  -ms-transform: skew(0,-6deg);
   border-bottom: solid 20px;
   border-color: #3a3a3a;
 }
@@ -128,76 +135,309 @@ a:visited {
   z-index: -2;
 }
 
+.content quiz {
+  background-color: #51c878;
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 420px;
+  left: 55%;
+  height: 80px;
+  width: 25%;
+  border-radius: 25px;
+  
+  box-shadow: 10px 10px 20px var(--shadow-1),
+  -10px -10px 20px var(--shadow-2);
+}
+
+.content quiz:hover {
+  box-shadow: inset 20px 20px 60px #45aa66, 
+  inset -20px -20px 60px #5de68a;
+  transition: all 0.5s ease;
+}
+
+.content quiz p {
+  text-decoration: none;
+  color: var(--secondary-color);
+  position: relative;
+  font-size: 22px;
+}
+
+.content quiz p:hover {
+  color: var(--primary-color);
+  transition: all 0.5s ease;
+}
+
+.content quiz p:visited {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 22px;
+}
+
 .subtopic subtopic1 {
   background-color: var(--background);
   color: var(--secondary-color);
-  padding-top: 35px;
+  padding: 0;
   margin: 0;
   position: absolute;
-  top: 630px;
-  left: 15%;
-  height: 65px;
-  width: 15%;
+  top: 520px;
+  left: 20%;
+  height: 85px;
+  width: 60%;
   border-radius: 25px;
-  text-align: center;
-  box-shadow: 10px 10px 20px var(--shadow-1), -10px -10px 20px var(--shadow-2);
+  box-shadow: 10px 10px 20px var(--shadow-1),
+  -10px -10px 20px var(--shadow-2);
   transition: all 0.5s ease;
+  z-index: -3;
+}
+
+.subtopic subtopic1 h2 {
+  position: relative;
+  top: -10px;
+  left: 150px;
+  pointer-events: none;
+}
+
+.subtopic subtopic1 p {
+  position: relative;
+  top: -30px;
+  left: 150px;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.subtopic subtopic1 span {
+  position: inherit;
+  top: 0px;
+  left: 0px;
+  height: 85px;
+  width: 100px;
+  background-color: #52c779;
+  z-index: -2;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  pointer-events: none;
+}
+
+.subtopic subtopic1 span2 {
+  position: inherit;
+  top: 0px;
+  left: 85px;
+  height: 85px;
+  width: 30px;
+  background-color: var(--secondary-color);
+  z-index: -1;
+  pointer-events: none;
+  -webkit-transform: skew(-20deg,0);
+  -ms-transform: skew(-20deg,0);
 }
 
 .subtopic subtopic2 {
   background-color: var(--background);
   color: var(--secondary-color);
-  padding-top: 35px;
+  padding: 0;
   margin: 0;
   position: absolute;
-  top: 630px;
-  left: 33%;
-  height: 65px;
-  width: 15%;
+  top: 635px;
+  left: 20%;
+  height: 85px;
+  width: 60%;
   border-radius: 25px;
-  text-align: center;
-  box-shadow: 10px 10px 20px var(--shadow-1), -10px -10px 20px var(--shadow-2);
+  box-shadow: 10px 10px 20px var(--shadow-1),
+  -10px -10px 20px var(--shadow-2);  
   transition: all 0.5s ease;
+  z-index: -3;
+}
+
+.subtopic subtopic2 h2 {
+  position: relative;
+  top: -10px;
+  left: 150px;
+  pointer-events: none;
+}
+
+.subtopic subtopic2 p {
+  position: relative;
+  top: -30px;
+  left: 150px;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.subtopic subtopic2 span {
+  position: inherit;
+  top: 0px;
+  left: 0px;
+  height: 85px;
+  width: 100px;
+  background-color: #2cd31d;
+  z-index: -2;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  pointer-events: none;
+}
+
+.subtopic subtopic2 span2 {
+  position: inherit;
+  top: 0px;
+  left: 85px;
+  height: 85px;
+  width: 30px;
+  background-color: var(--secondary-color);
+  z-index: -1;
+  pointer-events: none;
+  -webkit-transform: skew(-20deg,0);
+  -ms-transform: skew(-20deg,0);
 }
 
 .subtopic subtopic3 {
   background-color: var(--background);
   color: var(--secondary-color);
-  padding-top: 35px;
+  padding: 0;
   margin: 0;
   position: absolute;
-  top: 630px;
-  left: 51%;
-  height: 65px;
-  width: 15%;
+  top: 750px;
+  left: 20%;
+  height: 85px;
+  width: 60%;
   border-radius: 25px;
-  text-align: center;
-  box-shadow: 10px 10px 20px var(--shadow-1), -10px -10px 20px var(--shadow-2);
+  box-shadow: 10px 10px 20px var(--shadow-1),
+  -10px -10px 20px var(--shadow-2);
   transition: all 0.5s ease;
+  z-index: -3;
+}
+
+.subtopic subtopic3 h2 {
+  position: relative;
+  top: -10px;
+  left: 150px;
+  pointer-events: none;
+}
+
+.subtopic subtopic3 p {
+  position: relative;
+  top: -30px;
+  left: 150px;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.subtopic subtopic3 span {
+  position: inherit;
+  top: 0px;
+  left: 0px;
+  height: 85px;
+  width: 100px;
+  background-color: #17cf54;
+  z-index: -2;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  pointer-events: none;
+}
+
+.subtopic subtopic3 span2 {
+  position: inherit;
+  top: 0px;
+  left: 85px;
+  height: 85px;
+  width: 30px;
+  background-color: var(--secondary-color);
+  z-index: -1;
+  pointer-events: none;
+  -webkit-transform: skew(-20deg,0);
+  -ms-transform: skew(-20deg,0);
 }
 
 .subtopic subtopic4 {
   background-color: var(--background);
   color: var(--secondary-color);
-  padding-top: 35px;
+  padding: 0;
   margin: 0;
   position: absolute;
-  top: 630px;
-  left: 69%;
-  height: 65px;
-  width: 15%;
+  top: 865px;
+  left: 20%;
+  height: 85px;
+  width: 60%;
   border-radius: 25px;
-  text-align: center;
-  box-shadow: 10px 10px 20px var(--shadow-1), -10px -10px 20px var(--shadow-2);
+  box-shadow: 10px 10px 20px var(--shadow-1),
+  -10px -10px 20px var(--shadow-2);
   transition: all 0.5s ease;
+  z-index: -3;
+}
+
+.subtopic subtopic4 h2 {
+  position: relative;
+  top: -10px;
+  left: 150px;
+  pointer-events: none;
+}
+
+.subtopic subtopic4 p {
+  position: relative;
+  top: -30px;
+  left: 150px;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.subtopic subtopic4 span {
+  position: inherit;
+  top: 0px;
+  left: 0px;
+  height: 85px;
+  width: 100px;
+  background-color: #02db4a;
+  z-index: -2;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  pointer-events: none;
+}
+
+.subtopic subtopic4 span2 {
+  position: inherit;
+  top: 0px;
+  left: 85px;
+  height: 85px;
+  width: 30px;
+  background-color: var(--secondary-color);
+  z-index: -1;
+  pointer-events: none;
+  -webkit-transform: skew(-20deg,0);
+  -ms-transform: skew(-20deg,0);
 }
 
 .subtopic :hover {
-  color: #f88379;
+  color: #5de68a;
   box-shadow: inset 20px 20px 60px var(--shadow-1),
-    inset -20px -20px 60px var(--shadow-2);
+  inset -20px -20px 60px var(--shadow-2);
   transition: all 0.5s ease;
+  text-decoration: none;
 }
+
+
+.subtopic subtopic1 a {
+  color: var(--secondary-color);
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.subtopic subtopic1 a:active {
+  text-decoration: none;
+}
+
+.subtopic subtopic1 a:visited {
+  text-decoration: none;
+  color: var(--secondary-color)
+}
+
+.subtopic subtopic1 a:hover {
+  text-decoration: none;
+  color: #5de68a;
+}
+
 
 .subtopic subtopic2 a {
   color: var(--secondary-color);
@@ -212,14 +452,40 @@ a:visited {
 
 .subtopic subtopic2 a:visited {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--secondary-color)
 }
 
 .subtopic subtopic2 a:hover {
-  color: #f88379;
+  text-decoration: none;
+  color: #5de68a;
 }
 
-.content stripe {
+
+.subtopic subtopic3 a {
+  color: var(--secondary-color);
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.subtopic subtopic3 a:active {
+  text-decoration: none;
+}
+
+.subtopic subtopic3 a:visited {
+  text-decoration: none;
+  color: var(--secondary-color)
+}
+
+.subtopic subtopic3 a:hover {
+  text-decoration: none;
+  color: #5de68a;
+}
+
+
+
+
+/*.content stripe {
   background-color: #444;
   padding: 0;
   margin: 0;
@@ -230,31 +496,36 @@ a:visited {
   width: 60%;
   z-index: -3;
   border-radius: 10px;
-  box-shadow: 10px 10px 20px var(--shadow-1), -10px -10px 20px var(--shadow-2);
-}
+  box-shadow: 10px 10px 20px var(--shadow-1),
+  -10px -10px 20px var(--shadow-2);
+}*/
+
+
+
+
 
 .adspace adleft {
-  background-color: purple;
+  background-color: grey;
   color: white;
   padding: 15px;
   margin: 0;
   position: absolute;
   top: 0px;
   left: 0px;
-  height: 100%;
+  height: 1000px;
   width: 150px;
   z-index: -3;
 }
 
 .adspace adright {
-  background-color: purple;
+  background-color: grey;
   color: white;
   padding: 15px;
   margin: 0;
   position: absolute;
   top: 0px;
   right: 0px;
-  height: 100%;
+  height: 1000px;
   width: 150px;
   z-index: -3;
 }
