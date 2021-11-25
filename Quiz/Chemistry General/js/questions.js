@@ -260,7 +260,7 @@ let allQuestions = [
 
       question: 'Describe what a metallic bond is.',
 
-      answer: 'Electrostatic attractive force between a sea of conduction electrons and positively charged metal ionss',
+      answer: 'Electrostatic attractive force between a sea of conduction electrons and positively charged metal ions',
 
       options: ['Electrostatic attractive force between a sea of conduction electrons and positively charged metal ions', 'A chemical bond that involves the sharing of electron pairs between atoms', 'Chemical bonding that involves the electrostatic attraction between oppositely charged ions', 'A bond that connects metals by melting and then recombining into one'],
 

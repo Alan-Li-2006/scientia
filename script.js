@@ -26,3 +26,17 @@ icon.addEventListener('click', function () {
     localStorage.setItem('theme', 'light');
   }
 });
+
+//Show Points
+
+
+//Points System
+if (localStorage.getItem('points') == null) {
+  localStorage.setItem('points', 1000);
+}
+
+let userDNA = JSON.parse(localStorage.getItem('points'));
+
+localStorage.setItem('points', userDNA);
+console.log(userDNA);
+console.log(localStorage);

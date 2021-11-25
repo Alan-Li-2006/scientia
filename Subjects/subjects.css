@@ -76,6 +76,7 @@ body {
 }
 
 .wrapper {
+  margin-bottom: 100px;
   margin-left: 40px;
   position: relative;
   display: grid;
