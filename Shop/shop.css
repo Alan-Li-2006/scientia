@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--primary-color);
+}
+
 :root {
   --primary-color: #fff;
   --secondary-color: #444;
@@ -13,7 +26,7 @@
   --secondary-color: #fff;
   --shadow-1: #515151;
   --shadow-2: #6d6d6d;
-  --background: #5F5F5F;
+  --background: #5f5f5f;
 }
 
 body {
@@ -25,7 +38,6 @@ body {
   position: relative;
   display: inline-flex;
   margin: 50px;
-  left: -40px;
 }
 
 .menu ul li {
@@ -71,12 +83,6 @@ a:visited {
   top: 5%;
 }
 
-
-
-
-
-
-
 .header {
   background-color: var(--primary-color);
   padding: 0;
@@ -84,7 +90,7 @@ a:visited {
   position: absolute;
   top: 0;
   left: 0;
-  height:130px;
+  height: 130px;
   width: 100%;
   z-index: -1;
 }
@@ -116,14 +122,13 @@ a:visited {
   font-size: 20px;
 }
 
-
 .title p {
   color: var(--secondary-color);
   top: 10px;
   padding: 0;
   text-align: center;
   position: relative;
-} 
+}
 
 .title back {
   background-color: var(--primary-color);
@@ -133,13 +138,13 @@ a:visited {
   width: 100%;
   height: 420px;
   z-index: -2;
-  -webkit-transform: skew(0,-6deg);
-  -ms-transform: skew(0,-6deg);
+  -webkit-transform: skew(0, -6deg);
+  -ms-transform: skew(0, -6deg);
   border-bottom: solid 20px;
   border-color: #3a3a3a;
 }
 
-.content textbox1 {
+.DNA-amount textbox1 {
   color: var(--secondary-color);
   padding: 20px;
   margin: 0;
@@ -151,7 +156,7 @@ a:visited {
   line-height: 25px;
 }
 
-.content quiz {
+.DNA-amount amount {
   background-color: var(--background);
   color: var(--secondary-color);
   padding: 0;
@@ -162,18 +167,17 @@ a:visited {
   height: 80px;
   width: 29%;
   border-radius: 25px;
-  
-  box-shadow: 10px 10px 20px var(--shadow-1),
-  -10px -10px 20px var(--shadow-2);
+
+  box-shadow: 10px 10px 20px var(--shadow-1), -10px -10px 20px var(--shadow-2);
 }
 
-.content quiz h2 {
-    position: relative;
-    top: 3px;
-    left: 110px;
+.DNA-amount amount h2 {
+  position: relative;
+  top: 21px;
+  left: 110px;
 }
 
-.content quiz span {
+.DNA-amount amount span {
   background-color: #f88379;
   position: inherit;
   top: 0px;
@@ -185,20 +189,19 @@ a:visited {
   border-top-left-radius: 25px;
 }
 
+.DNA-amount amount span2 {
+  position: inherit;
+  top: 0px;
+  left: 60px;
+  height: 80px;
+  width: 30px;
+  background-color: var(--secondary-color);
+  z-index: 2;
+  -webkit-transform: skew(-20deg, 0);
+  -ms-transform: skew(-20deg, 0);
+}
 
-.content quiz span2 {
-    position: inherit;
-    top: 0px;
-    left: 60px;
-    height: 80px;
-    width: 30px;
-    background-color: var(--secondary-color);
-    z-index: 2;
-    -webkit-transform: skew(-20deg,0);
-    -ms-transform: skew(-20deg,0);
-  }
-
-.content h1{
+.DNA-amount h1 {
   color: var(--secondary-color);
   padding: 20px;
   margin: 0;
@@ -210,7 +213,7 @@ a:visited {
   line-height: 25px;
 }
 
-.content stripe{
+.DNA-amount stripe {
   background-color: var(--secondary-color);
   margin: 20px;
   position: absolute;
@@ -221,17 +224,15 @@ a:visited {
   border-radius: 10px;
 }
 
-.item item1{
-    background-color: var(--primary-color);
-    position: relative;
-    left: 10%;
-    height: 400px;
-    width: 300px;
-    top: 800px;
-    border-radius: 25px;
-  }
-
-
+.item item1 {
+  background-color: var(--primary-color);
+  position: relative;
+  left: 10%;
+  height: 400px;
+  width: 300px;
+  top: 800px;
+  border-radius: 25px;
+}
 
 .adspace adleft {
   background-color: grey;
@@ -257,4 +258,8 @@ a:visited {
   height: 2000px;
   width: 150px;
   z-index: -3;
+}
+
+.DNA-colour {
+  color: #f88379;
 }
