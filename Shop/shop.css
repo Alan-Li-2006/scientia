@@ -163,9 +163,11 @@ a:visited {
   margin: 0;
   position: absolute;
   top: 450px;
-  left: 55%;
+  left: 45%;
+  /* 55% on desktop */
   height: 80px;
-  width: 29%;
+  width: 39%;
+  /* 29% on desktop */
   border-radius: 25px;
 
   box-shadow: 10px 10px 20px var(--shadow-1), -10px -10px 20px var(--shadow-2);
@@ -265,11 +267,12 @@ a:visited {
 }
 
 .whiteBodyContainer {
-  position: relative;
+  position: absolute;
   background-color: var(--secondary-color);
   height: 1400px;
   width: 900px;
-  left: 25%;
+  left: 12.9%;
+  /* 25% on desktop */
   top: 600px;
   padding: 20px;
   border-radius: 25px;

@@ -515,7 +515,8 @@ a:visited {
   position: absolute;
   box-shadow: 5px white;
   top: 480px;
-  left: 25%;
+  left: 21.5%;
+  /* left = 25% on desktop */
   width: 40%;
   height: fit-content;
   box-shadow: 3px 3px 20px 2px rgb(15, 15, 15);
