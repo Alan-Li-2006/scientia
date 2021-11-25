@@ -218,6 +218,18 @@ body {
   transition-delay: 0.75s;
 }
 
+.phys-icon {
+  height: 90px;
+  width: 280px;
+  object-fit: cover;
+}
+
+.astro-icon {
+  height: 90px;
+  width: 280px;
+  object-fit: cover;
+}
+
 /* .wrapper h2 {
   font-size: 0.75em;
 }
