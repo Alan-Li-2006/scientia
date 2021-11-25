@@ -39,3 +39,13 @@ let userDNA = JSON.parse(localStorage.getItem('points'));
 localStorage.setItem('points', userDNA);
 console.log(userDNA);
 console.log(localStorage);
+
+//Dead code, tried to make a way to reset subtopicRecommendation to 0 for all keys quickly but didnt work
+
+// let subtopicRecommendations = JSON.parse(
+//   localStorage.getItem('suggestionValue')
+// );
+// subtopicRecommendations.bonds = 0;
+// subtopicRecommendations.atoms = 0;
+// let subRecsSerialised = JSON.stringify(subtopicRecommendations);
+// localStorage.setItem('suggestionValue', subRecsSerialised);
