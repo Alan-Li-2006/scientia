@@ -13,7 +13,7 @@
   --secondary-color: #fff;
   --shadow-1: #515151;
   --shadow-2: #6d6d6d;
-  --background: #5F5F5F;
+  --background: #5f5f5f;
 }
 
 body {
@@ -78,7 +78,7 @@ a:visited {
   position: absolute;
   top: 0;
   left: 0;
-  height:130px;
+  height: 150px;
   width: 100%;
   z-index: -1;
 }
@@ -110,6 +110,14 @@ a:visited {
   font-size: 20px;
 }
 
+.title p {
+  color: var(--secondary-color);
+  top: 10px;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+
 .title back {
   background-color: var(--primary-color);
   position: absolute;
@@ -118,8 +126,8 @@ a:visited {
   width: 100%;
   height: 320px;
   z-index: -2;
-  -webkit-transform: skew(0,-6deg);
-  -ms-transform: skew(0,-6deg);
+  -webkit-transform: skew(0, -6deg);
+  -ms-transform: skew(0, -6deg);
   border-bottom: solid 20px;
   border-color: #3a3a3a;
 }
@@ -147,9 +155,8 @@ a:visited {
   height: 80px;
   width: 25%;
   border-radius: 25px;
-  
-  box-shadow: 10px 10px 20px var(--shadow-1),
-  -10px -10px 20px var(--shadow-2);
+
+  box-shadow: 10px 10px 20px var(--shadow-1), -10px -10px 20px var(--shadow-2);
 }
 
 .subtopic subtopic1 {
@@ -163,8 +170,7 @@ a:visited {
   height: 85px;
   width: 60%;
   border-radius: 25px;
-  box-shadow: 10px 10px 20px var(--shadow-1),
-  -10px -10px 20px var(--shadow-2);
+  box-shadow: 10px 10px 20px var(--shadow-1), -10px -10px 20px var(--shadow-2);
   transition: all 0.5s ease;
   z-index: -3;
 }
@@ -206,8 +212,8 @@ a:visited {
   background-color: var(--secondary-color);
   z-index: -1;
   pointer-events: none;
-  -webkit-transform: skew(-20deg,0);
-  -ms-transform: skew(-20deg,0);
+  -webkit-transform: skew(-20deg, 0);
+  -ms-transform: skew(-20deg, 0);
 }
 
 .subtopic subtopic2 {
@@ -221,8 +227,7 @@ a:visited {
   height: 85px;
   width: 60%;
   border-radius: 25px;
-  box-shadow: 10px 10px 20px var(--shadow-1),
-  -10px -10px 20px var(--shadow-2);  
+  box-shadow: 10px 10px 20px var(--shadow-1), -10px -10px 20px var(--shadow-2);
   transition: all 0.5s ease;
   z-index: -3;
 }
@@ -264,8 +269,8 @@ a:visited {
   background-color: var(--secondary-color);
   z-index: -1;
   pointer-events: none;
-  -webkit-transform: skew(-20deg,0);
-  -ms-transform: skew(-20deg,0);
+  -webkit-transform: skew(-20deg, 0);
+  -ms-transform: skew(-20deg, 0);
 }
 
 .subtopic subtopic3 {
@@ -279,8 +284,7 @@ a:visited {
   height: 85px;
   width: 60%;
   border-radius: 25px;
-  box-shadow: 10px 10px 20px var(--shadow-1),
-  -10px -10px 20px var(--shadow-2);
+  box-shadow: 10px 10px 20px var(--shadow-1), -10px -10px 20px var(--shadow-2);
   transition: all 0.5s ease;
   z-index: -3;
 }
@@ -322,8 +326,8 @@ a:visited {
   background-color: var(--secondary-color);
   z-index: -1;
   pointer-events: none;
-  -webkit-transform: skew(-20deg,0);
-  -ms-transform: skew(-20deg,0);
+  -webkit-transform: skew(-20deg, 0);
+  -ms-transform: skew(-20deg, 0);
 }
 
 .subtopic subtopic4 {
@@ -337,8 +341,7 @@ a:visited {
   height: 85px;
   width: 60%;
   border-radius: 25px;
-  box-shadow: 10px 10px 20px var(--shadow-1),
-  -10px -10px 20px var(--shadow-2);
+  box-shadow: 10px 10px 20px var(--shadow-1), -10px -10px 20px var(--shadow-2);
   transition: all 0.5s ease;
   z-index: -3;
 }
@@ -380,18 +383,17 @@ a:visited {
   background-color: var(--secondary-color);
   z-index: -1;
   pointer-events: none;
-  -webkit-transform: skew(-20deg,0);
-  -ms-transform: skew(-20deg,0);
+  -webkit-transform: skew(-20deg, 0);
+  -ms-transform: skew(-20deg, 0);
 }
 
 .subtopic :hover {
   color: #f88379;
   box-shadow: inset 20px 20px 60px var(--shadow-1),
-  inset -20px -20px 60px var(--shadow-2);
+    inset -20px -20px 60px var(--shadow-2);
   transition: all 0.5s ease;
   text-decoration: none;
 }
-
 
 .subtopic subtopic1 a {
   color: var(--secondary-color);
@@ -406,14 +408,13 @@ a:visited {
 
 .subtopic subtopic1 a:visited {
   text-decoration: none;
-  color: var(--secondary-color)
+  color: var(--secondary-color);
 }
 
 .subtopic subtopic1 a:hover {
   text-decoration: none;
   color: #f88379;
 }
-
 
 .subtopic subtopic2 a {
   color: var(--secondary-color);
@@ -428,14 +429,13 @@ a:visited {
 
 .subtopic subtopic2 a:visited {
   text-decoration: none;
-  color: var(--secondary-color)
+  color: var(--secondary-color);
 }
 
 .subtopic subtopic2 a:hover {
   text-decoration: none;
   color: #f88379;
 }
-
 
 .subtopic subtopic3 a {
   color: var(--secondary-color);
@@ -450,16 +450,13 @@ a:visited {
 
 .subtopic subtopic3 a:visited {
   text-decoration: none;
-  color: var(--secondary-color)
+  color: var(--secondary-color);
 }
 
 .subtopic subtopic3 a:hover {
   text-decoration: none;
   color: #f88379;
 }
-
-
-
 
 /*.content stripe {
   background-color: #444;
@@ -475,10 +472,6 @@ a:visited {
   box-shadow: 10px 10px 20px var(--shadow-1),
   -10px -10px 20px var(--shadow-2);
 }*/
-
-
-
-
 
 .adspace adleft {
   background-color: grey;
