@@ -150,26 +150,33 @@ function optionSelected(answer) {
 
   if (userAns == correctAns) {
     userScore += 1;
-    userDNA += 100;
+    userDNA += 10;
     localStorage.setItem('points', userDNA);
     answer.classList.add('correct');
     console.log('Answer is Correct');
     answer.insertAdjacentHTML('beforeend', tickIcon);
 
-    if (subtopicRecommendations.bonds !== 0 && que_count == 19 && (userScore/que_count) >= 0.9) {
+    if (
+      subtopicRecommendations.bonds !== 0 &&
+      que_count == 19 &&
+      userScore / que_count >= 0.9
+    ) {
       subtopicRecommendations.bonds -= 1;
       let subRecsSerialised = JSON.stringify(subtopicRecommendations);
       localStorage.setItem('suggestionValue', subRecsSerialised);
       console.log(subtopicRecommendations);
     }
 
-    if (subtopicRecommendations.atoms !== 0 && que_count == 19 && (userScore/que_count) >= 0.9) {
+    if (
+      subtopicRecommendations.atoms !== 0 &&
+      que_count == 19 &&
+      userScore / que_count >= 0.9
+    ) {
       subtopicRecommendations.atoms -= 1;
       let subRecsSerialised = JSON.stringify(subtopicRecommendations);
       localStorage.setItem('suggestionValue', subRecsSerialised);
       console.log(subtopicRecommendations);
     }
-
   } else {
     answer.classList.add('incorrect');
     console.log('Incorrect answer ');

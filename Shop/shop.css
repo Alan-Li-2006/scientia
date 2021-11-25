@@ -263,3 +263,170 @@ a:visited {
 .DNA-colour {
   color: #f88379;
 }
+
+.whiteBodyContainer {
+  position: absolute;
+  background-color: var(--secondary-color);
+  height: 1400px;
+  width: 900px;
+  left: 25%;
+  top: 600px;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.whiteBodyContainer h2 {
+  position: relative;
+  color: var(--secondary-color);
+  z-index: 1;
+}
+
+.whiteBodyContainer p {
+  position: relative;
+  color: var(--primary-color);
+  top: 30px;
+  z-index: 1;
+}
+
+.whiteBodyContainer hr {
+  margin-top: 40px;
+}
+
+.extra1 {
+  position: absolute;
+  background-color: #f88379;
+  height: 30px;
+  width: 900px;
+  left: 0%;
+  top: 0px;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.extra2 {
+  position: absolute;
+  background-color: #f88379;
+  height: 10px;
+  width: 900px;
+  left: 0%;
+  top: 20px;
+  padding: 20px;
+}
+
+.neophyte {
+  position: relative;
+  background-color: #ccc;
+  height: 120px;
+  width: 860px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.whiteBodyContainer h1,
+description {
+  padding: 20px 20px 10px 20px;
+  color: var(--primary-color);
+}
+
+.novice {
+  position: relative;
+  background-color: rgb(156, 224, 198);
+  height: 120px;
+  width: 860px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.amateur {
+  position: relative;
+  background-color: rgb(253, 183, 198);
+  height: 120px;
+  width: 860px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.apprentice {
+  position: relative;
+  background-color: rgb(253, 183, 253);
+  height: 120px;
+  width: 860px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.expert {
+  position: relative;
+  background-color: rgb(195, 194, 255);
+  height: 120px;
+  width: 860px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.master {
+  position: relative;
+  background-color: rgb(194, 231, 255);
+  height: 120px;
+  width: 860px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.scientiaGenius {
+  position: relative;
+  background-color: rgb(255, 236, 194);
+  height: 120px;
+  width: 860px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.whiteBodyContainer buy {
+  background-color: #f88379;
+  color: var(--primary-color);
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 20px;
+  left: 70%;
+  height: 80px;
+  width: 24%;
+  border-radius: 25px;
+  z-index: 2;
+  box-shadow: 5px 5px 10px var(--shadow-1), -5px -5px 10px var(--shadow-2);
+}
+
+.whiteBodyContainer buy:hover {
+  box-shadow: inset 20px 20px 60px #d36f67, inset -20px -20px 60px #ff978b;
+  color: var(--secondary-color);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.whiteBodyContainer buy:visited {
+  text-decoration: none;
+}
+
+.whiteBodyContainer buy:active {
+  text-decoration: none;
+}
+
+h3 {
+  margin-top: 25px;
+}

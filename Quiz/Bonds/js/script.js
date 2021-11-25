@@ -149,22 +149,31 @@ function optionSelected(answer) {
 
   if (userAns == correctAns) {
     userScore += 1;
-    userDNA += 100;
+    userDNA += 10;
     localStorage.setItem('points', userDNA);
     answer.classList.add('correct');
     console.log('Answer is Correct');
     answer.insertAdjacentHTML('beforeend', tickIcon);
-  } else {
-    answer.classList.add('incorrect');
-    console.log('Incorrect answer ');
-    answer.insertAdjacentHTML('beforeend', crossIcon);
 
-    if (subtopicRecommendations.bonds !== 0 && que_count == 9 && (userScore/que_count) >= 1) {
+    if (
+      subtopicRecommendations.bonds !== 0 &&
+      que_count == 9 &&
+      userScore / que_count >= 1
+    ) {
       subtopicRecommendations.bonds -= 1;
       let subRecsSerialised = JSON.stringify(subtopicRecommendations);
       localStorage.setItem('suggestionValue', subRecsSerialised);
       console.log(subtopicRecommendations);
     }
+  } else {
+    answer.classList.add('incorrect');
+    console.log('Incorrect answer ');
+    answer.insertAdjacentHTML('beforeend', crossIcon);
+
+    subtopicRecommendations.bonds += 1;
+    let subRecsSerialised = JSON.stringify(subtopicRecommendations);
+    localStorage.setItem('suggestionValue', subRecsSerialised);
+    console.log(subtopicRecommendations);
 
     //Automatically selecting correct answer if answer is incorrect
     for (let i = 0; i < allOptions; i++) {

@@ -31,7 +31,7 @@ icon.addEventListener('click', function () {
 
 //Points System
 if (localStorage.getItem('points') == null) {
-  localStorage.setItem('points', 1000);
+  localStorage.setItem('points', 100);
 }
 
 let userDNA = JSON.parse(localStorage.getItem('points'));
@@ -45,6 +45,7 @@ console.log(localStorage);
 // let subtopicRecommendations = JSON.parse(
 //   localStorage.getItem('suggestionValue')
 // );
+
 // subtopicRecommendations.bonds = 0;
 // subtopicRecommendations.atoms = 0;
 // let subRecsSerialised = JSON.stringify(subtopicRecommendations);

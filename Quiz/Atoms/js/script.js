@@ -149,13 +149,17 @@ function optionSelected(answer) {
 
   if (userAns == correctAns) {
     userScore += 1;
-    userDNA += 100;
+    userDNA += 10;
     localStorage.setItem('points', userDNA);
     answer.classList.add('correct');
     console.log('Answer is Correct');
     answer.insertAdjacentHTML('beforeend', tickIcon);
 
-    if (subtopicRecommendations.atoms !== 0 && que_count == 9 && (userScore/que_count) >= 1) {
+    if (
+      subtopicRecommendations.atoms !== 0 &&
+      que_count == 9 &&
+      userScore / que_count >= 1
+    ) {
       subtopicRecommendations.atoms -= 1;
       let subRecsSerialised = JSON.stringify(subtopicRecommendations);
       localStorage.setItem('suggestionValue', subRecsSerialised);
