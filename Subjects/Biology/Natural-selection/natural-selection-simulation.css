@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #444;
+  --shadow-1: #c6c6c6;
+  --shadow-2: #fff;
+  --background: #e9e9e9;
+}
+
+.dark-theme {
+  --primary-color: #444;
+  --secondary-color: #fff;
+  --shadow-1: #515151;
+  --shadow-2: #6d6d6d;
+  --background: #5F5F5F;
+}
+
+body {
+  background: var(--background);
+  font-family: 'Poppins', sans-serif;
+}
+
+.menu ul {
+  position: relative;
+  display: inline-flex;
+  margin: 50px;
+  left: -40px;
+}
+
+.menu ul li {
+  list-style: none;
+  margin: 0 20px;
+  color: #b2b1b1;
+  cursor: pointer;
+}
+
+.menu ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: #b2b1b1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.logo img {
+  width: 60px;
+  margin-top: -12px;
+  margin-right: 5px;
+}
+
+.active {
+  color: #f88379 !important;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  left: 95%;
+  top: 5%;
+}
+
+
+
+
+
+
+
+.header {
+  background-color: var(--primary-color);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:130px;
+  width: 100%;
+  z-index: -1;
+}
+
+.title h1 {
+  color: var(--secondary-color);
+  top: -10px;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  font-size: 40px;
+}
+
+.title h1 span {
+  font-size: 50px;
+}
+
+.title p {
+  color: var(--secondary-color);
+  top: 30px;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+}
+
+
+.title p {
+  color: var(--secondary-color);
+  top: 10px;
+  padding: 0;
+  text-align: center;
+  position: relative;
+} 
+
+.title back {
+  background-color: var(--primary-color);
+  position: absolute;
+  left: 0px;
+  top: -50px;
+  width: 100%;
+  height: 420px;
+  z-index: -2;
+  -webkit-transform: skew(0,-6deg);
+  -ms-transform: skew(0,-6deg);
+  border-bottom: solid 20px;
+  border-color: #3a3a3a;
+}
+
+.content textbox1 {
+  color: var(--secondary-color);
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 480px;
+  left: 15%;
+  height: fit-content;
+  width: 68%;
+  line-height: 25px;
+}
+
+.content quiz {
+  background-color: #f88379;
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 450px;
+  left: 55%;
+  height: 80px;
+  width: 29%;
+  border-radius: 25px;
+  
+  box-shadow: 10px 10px 20px var(--shadow-1),
+  -10px -10px 20px var(--shadow-2);
+}
+
+.content quiz:hover {
+  box-shadow: inset 20px 20px 60px #d36f67,
+  inset -20px -20px 60px #ff978b;
+  color: black;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.content quiz:visited {
+  text-decoration: none;
+}
+
+.content quiz:active {
+  text-decoration: none;
+}
+
+.content textbox2 {
+  color: var(--secondary-color);
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 675px;
+  left: 15%;
+  height: fit-content;
+  width: 37%;
+  line-height: 25px;
+}
+
+.content textbox3a {
+  color: var(--secondary-color);
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 1200px;
+  left: 15%;
+  height: fit-content;
+  width: 27%;
+  line-height: 25px;
+}
+
+.content textbox3b {
+  color: var(--secondary-color);
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 1550px;
+  left: 15%;
+  height: fit-content;
+  width: 68%;
+  line-height: 25px;
+}
+
+.content textbox3c {
+  color: var(--secondary-color);
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 2450px;
+  left: 15%;
+  height: fit-content;
+  width: 68%;
+  line-height: 26px;
+}
+
+.content textbox4a {
+  color: var(--secondary-color);
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 2750px;
+  left: 15%;
+  height: fit-content;
+  width: 68%;
+  line-height: 25px;
+}
+
+.content textbox4b {
+  color: var(--secondary-color);
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 2920px;
+  left: 15%;
+  height: fit-content;
+  width: 31%;
+  line-height: 25px;
+}
+
+.content h1{
+  color: var(--secondary-color);
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 2900px;
+  left: 15%;
+  height: fit-content;
+  width: 68%;
+  line-height: 25px;
+}
+
+.content stripe{
+  background-color: var(--secondary-color);
+  margin: 20px;
+  position: absolute;
+  top: 2950px;
+  left: 15%;
+  height: 8px;
+  width: 68%;
+  border-radius: 10px;
+}
+
+.content iframe {
+  position: absolute;
+  left: 220px;
+  top: 600px;
+}
+
+
+
+
+
+
+.image-gallery gallery1 {
+  content: url(/Resources/NS_1.png);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 750px;
+  left: 55%;
+  object-fit: contain;
+  height: 320px;
+  width: 29%;
+  border-radius: 25px;
+  box-shadow: 10px 10px 20px var(--shadow-1),
+  -10px -10px 20px var(--shadow-2);
+}
+
+.image-gallery gallery2 {
+  content: url(/Resources/NS_2.png);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 1250px;
+  left: 45%;
+  object-fit: cover;
+  height: 300px;
+  width: 40%;
+  border-radius: 25px;
+  box-shadow: 10px 10px 20px var(--shadow-1),
+  -10px -10px 20px var(--shadow-2);
+}
+
+.image-gallery gallery3 {
+  content: url(/Resources/NS_3.png);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  object-fit: cover;
+  top: 2170px;
+  left: 16%;
+  height: 300px;
+  width: 68%;
+  border-radius: 25px;
+  box-shadow: 10px 10px 20px var(--shadow-1),
+  -10px -10px 20px var(--shadow-2);
+}
+
+.image-gallery gallery4 {
+  content: url(/Resources/NS_4.png);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 2960px;
+  object-fit: cover;
+  left: 50%;
+  height: 340px;
+  width: 33%;
+  border-radius: 25px;
+  box-shadow: 10px 10px 20px var(--shadow-1),
+  -10px -10px 20px var(--shadow-2);
+}
+
+
+
+
+
+
+.adspace adleft {
+  background-color: grey;
+  color: white;
+  padding: 15px;
+  margin: 0;
+  position: absolute;
+  top: 130px;
+  left: 0px;
+  height: 1300px;
+  width: 150px;
+  z-index: -3;
+}
+
+.adspace adright {
+  background-color: grey;
+  color: white;
+  padding: 15px;
+  margin: 0;
+  position: absolute;
+  top: 130px;
+  right: 0px;
+  height: 1300px;
+  width: 150px;
+  z-index: -3;
+}
