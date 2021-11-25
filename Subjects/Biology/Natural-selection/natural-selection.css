@@ -146,7 +146,7 @@ a:visited {
   top: 480px;
   left: 15%;
   height: fit-content;
-  width: 37%;
+  width: 68%;
   line-height: 25px;
 }
 
@@ -188,7 +188,7 @@ a:visited {
   padding: 20px;
   margin: 0;
   position: absolute;
-  top: 875px;
+  top: 675px;
   left: 15%;
   height: fit-content;
   width: 37%;
@@ -203,7 +203,7 @@ a:visited {
   top: 1200px;
   left: 15%;
   height: fit-content;
-  width: 52%;
+  width: 27%;
   line-height: 25px;
 }
 
@@ -212,7 +212,7 @@ a:visited {
   padding: 20px;
   margin: 0;
   position: absolute;
-  top: 1630px;
+  top: 1550px;
   left: 15%;
   height: fit-content;
   width: 68%;
@@ -224,10 +224,10 @@ a:visited {
   padding: 20px;
   margin: 0;
   position: absolute;
-  top: 2135px;
-  left: 51%;
+  top: 2450px;
+  left: 15%;
   height: fit-content;
-  width: 32%;
+  width: 68%;
   line-height: 26px;
 }
 
@@ -236,58 +236,22 @@ a:visited {
   padding: 20px;
   margin: 0;
   position: absolute;
-  top: 2240px;
+  top: 2750px;
   left: 15%;
   height: fit-content;
   width: 68%;
   line-height: 25px;
 }
 
-.content textbox5a {
+.content textbox4b {
   color: var(--secondary-color);
   padding: 20px;
   margin: 0;
   position: absolute;
-  top: 2600px;
+  top: 2920px;
   left: 15%;
   height: fit-content;
   width: 31%;
-  line-height: 25px;
-}
-
-.content textbox5b {
-  color: var(--secondary-color);
-  padding: 20px;
-  margin: 0;
-  position: absolute;
-  top: 2870px;
-  left: 15%;
-  height: fit-content;
-  width: 68%;
-  line-height: 25px;
-}
-
-.content textbox6a {
-  color: var(--secondary-color);
-  padding: 20px;
-  margin: 0;
-  position: absolute;
-  top: 3170px;
-  left: 15%;
-  height: fit-content;
-  width: 33%;
-  line-height: 25px;
-}
-
-.content textbox6b {
-  color: var(--secondary-color);
-  padding: 20px;
-  margin: 0;
-  position: absolute;
-  top: 3900px;
-  left: 15%;
-  height: fit-content;
-  width: 68%;
   line-height: 25px;
 }
 
@@ -326,14 +290,14 @@ a:visited {
 
 
 .image-gallery gallery1 {
-  content: url(/Resources/Atoms_1.png);
+  content: url(/Resources/NS_1.png);
   padding: 0;
   margin: 0;
   position: absolute;
-  top: 570px;
+  top: 750px;
   left: 55%;
   object-fit: contain;
-  height: 300px;
+  height: 320px;
   width: 29%;
   border-radius: 25px;
   box-shadow: 10px 10px 20px var(--shadow-1),
@@ -341,79 +305,50 @@ a:visited {
 }
 
 .image-gallery gallery2 {
-  content: url(/Resources/Atoms_2.png);
+  content: url(/Resources/NS_2.png);
   padding: 0;
   margin: 0;
   position: absolute;
-  top: 900px;
-  left: 55%;
+  top: 1250px;
+  left: 45%;
   object-fit: cover;
   height: 300px;
-  width: 29%;
+  width: 40%;
   border-radius: 25px;
   box-shadow: 10px 10px 20px var(--shadow-1),
   -10px -10px 20px var(--shadow-2);
 }
 
 .image-gallery gallery3 {
-  content: url(/Resources/Atoms_3.png);
+  content: url(/Resources/NS_3.png);
   padding: 0;
   margin: 0;
   position: absolute;
   object-fit: cover;
-  top: 1300px;
-  left: 70%;
-  height: 300px;
-  width: 14%;
-  border-radius: 25px;
-  box-shadow: 10px 10px 20px var(--shadow-1),
-  -10px -10px 20px var(--shadow-2);
-}
-
-.image-gallery gallery4 {
-  content: url(/Resources/Atoms_4.png);
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 1925px;
-  object-fit: contain;
+  top: 2170px;
   left: 16%;
-  height: 260px;
+  height: 300px;
   width: 68%;
   border-radius: 25px;
   box-shadow: 10px 10px 20px var(--shadow-1),
   -10px -10px 20px var(--shadow-2);
 }
 
-.image-gallery gallery5 {
-  content: url(/Resources/Atoms_5.png);
+.image-gallery gallery4 {
+  content: url(/Resources/NS_4.png);
   padding: 0;
   margin: 0;
   position: absolute;
+  top: 2960px;
   object-fit: cover;
-  top: 2630px;
-  left: 47%;
-  height: 260px;
-  width: 37%;
-  border-radius: 25px;
-  box-shadow: 10px 10px 20px var(--shadow-1),
-  -10px -10px 20px var(--shadow-2);
-}
-
-.image-gallery gallery6 {
-  content: url(/Resources/Atoms_6.png);
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  object-fit: cover;
-  top: 3240px;
-  left: 51%;
-  height: 680px;
+  left: 50%;
+  height: 340px;
   width: 33%;
   border-radius: 25px;
   box-shadow: 10px 10px 20px var(--shadow-1),
   -10px -10px 20px var(--shadow-2);
 }
+
 
 
 
@@ -427,7 +362,7 @@ a:visited {
   position: absolute;
   top: 130px;
   left: 0px;
-  height: 4200px;
+  height: 3200px;
   width: 150px;
   z-index: -3;
 }
@@ -440,7 +375,7 @@ a:visited {
   position: absolute;
   top: 130px;
   right: 0px;
-  height: 4200px;
+  height: 3200px;
   width: 150px;
   z-index: -3;
 }
