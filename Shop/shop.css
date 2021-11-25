@@ -265,7 +265,7 @@ a:visited {
 }
 
 .whiteBodyContainer {
-  position: absolute;
+  position: relative;
   background-color: var(--secondary-color);
   height: 1400px;
   width: 900px;
