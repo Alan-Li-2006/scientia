@@ -134,6 +134,12 @@ if (subtopicRecommendations == null) {
   };
 }
 
+if (localStorage.getItem('points') == null) {
+  localStorage.setItem('points', 1000);
+}
+
+let userDNA = JSON.parse(localStorage.getItem('points'));
+
 function optionSelected(answer) {
   clearInterval(counter);
   clearInterval(counterLine);
@@ -143,9 +149,18 @@ function optionSelected(answer) {
 
   if (userAns == correctAns) {
     userScore += 1;
+    userDNA += 100;
+    localStorage.setItem('points', userDNA);
     answer.classList.add('correct');
     console.log('Answer is Correct');
     answer.insertAdjacentHTML('beforeend', tickIcon);
+
+    if (subtopicRecommendations.atoms !== 0 && que_count == 9 && (userScore/que_count) >= 1) {
+      subtopicRecommendations.atoms -= 1;
+      let subRecsSerialised = JSON.stringify(subtopicRecommendations);
+      localStorage.setItem('suggestionValue', subRecsSerialised);
+      console.log(subtopicRecommendations);
+    }
   } else {
     answer.classList.add('incorrect');
     console.log('Incorrect answer ');

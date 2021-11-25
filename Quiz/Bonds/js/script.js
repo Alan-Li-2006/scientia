@@ -134,6 +134,12 @@ if (subtopicRecommendations == null) {
   };
 }
 
+if (localStorage.getItem('points') == null) {
+  localStorage.setItem('points', 1000);
+}
+
+let userDNA = JSON.parse(localStorage.getItem('points'));
+
 function optionSelected(answer) {
   clearInterval(counter);
   clearInterval(counterLine);
@@ -143,6 +149,8 @@ function optionSelected(answer) {
 
   if (userAns == correctAns) {
     userScore += 1;
+    userDNA += 100;
+    localStorage.setItem('points', userDNA);
     answer.classList.add('correct');
     console.log('Answer is Correct');
     answer.insertAdjacentHTML('beforeend', tickIcon);
@@ -151,10 +159,12 @@ function optionSelected(answer) {
     console.log('Incorrect answer ');
     answer.insertAdjacentHTML('beforeend', crossIcon);
 
-    subtopicRecommendations.bonds += 1;
-    let subRecsSerialised = JSON.stringify(subtopicRecommendations);
-    localStorage.setItem('suggestionValue', subRecsSerialised);
-    console.log(subtopicRecommendations);
+    if (subtopicRecommendations.bonds !== 0 && que_count == 9 && (userScore/que_count) >= 1) {
+      subtopicRecommendations.bonds -= 1;
+      let subRecsSerialised = JSON.stringify(subtopicRecommendations);
+      localStorage.setItem('suggestionValue', subRecsSerialised);
+      console.log(subtopicRecommendations);
+    }
 
     //Automatically selecting correct answer if answer is incorrect
     for (let i = 0; i < allOptions; i++) {
